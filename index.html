@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--BOOTSTRAP ICON-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--FLAG ICON-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
+    <!--AJAX-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" type="image/x-icon" href="assets/gis_logo.png" sizes="16x12">
+    <!--BOXICON-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="style/homepagestyle.css">
+    <title>gis247.net</title>
+</head>
+
+<body>
+    <header class="header_default">
+        <a class="logo" href="#">
+            <img src="assets/gis_logo_nobg.png">
+        </a>
+
+        <nav class="navbar_default">
+            <a href="#whatIsGis" class="navbtn_default">About GIS</a>
+            <a href="#features" class="navbtn_default">Features</a>
+            <a href="#enquiry" class="navbtn_default">Enquiry</a>
+
+            <div class="btnList">
+                <a href="#">
+                    <button type="button" class="btn" id="btnLogin">Log
+                        in</button>
+                </a>
+                <a href="#">
+                    <button type="button" class="btn" id="btnRegis">Sign Up
+                        <i class="bi bi-arrow-right-short" id="arrow-short"></i>
+                        <i class="bi bi-arrow-right" id="arrow-long"></i>
+                    </button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <header class="header_mobile">
+        <a class="logo_mobile" href="#">
+            <img src="assets/gis_logo_nobg.png">
+        </a>
+
+        <input type="checkbox" id="check" hidden>
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navbar_mobile">
+            <a href="#whatIsGis" class="navbtn">About GIS</a>
+            <a href="#features" class="navbtn">Features</a>
+            <a href="#enquiry" class="navbtn">Enquiry</a>
+
+            <div class="btnList">
+                <a href="#" class="btnlink">
+                    <button type="button" class="btn" id="btnLogin">Log
+                        in</button>
+                </a>
+                <a href="#" class="btnlink">
+                    <button type="button" class="btn" id="btnRegis">Sign Up</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="heroSection">
+        <div class="row" id="heroSection_content_frame">
+            <div class="col-3" id="heroSection_content">
+                <div class="herosection_header">
+                    <h1>
+                        Manage your jewelry business simply with GIS
+                    </h1>
+                </div>
+                <div class="herosection_detail">
+                    <p>Jewelry inventory software provides a functional system
+                        to manage your warehouse and POS on one platform,
+                        anywhere and anytime.</p>
+                </div>
+                <div class="herosection_reqdemo">
+                    <a href="#enquiry">
+                        <button type="button" class="btn" id="herosection-btndemo">Request Demo
+                            <i class="bi bi-arrow-right-short" id="herosection-arrow-short"></i>
+                            <i class="bi bi-arrow-right" id="herosection-arrow-long"></i>
+                        </button>
+
+                    </a>
+                </div>
+            </div>
+            <div class="col-6" id="herosection_image">
+                <img src="assets/herosection_img.png" Hero Section Image Object">
+            </div>
+        </div>
+        <div class="heroshape1"></div>
+        <div class="heroshape2"></div>
+        <div class="heroshape3"></div>
+    </section>
+    <section class="whatisgisSection reveal" id="whatIsGis">
+        <div class="whatisgisHeader_content">
+            <div class="gissmallcircleshape1"></div>
+            <div class="gissmallcircleshape2"></div>
+            <div class="gissmallcircleshape3"></div>
+            <div class="gisheadertitle">
+                <h2>What is GIS?</h2>
+            </div>
+            <div class="gisheaderfulltitle">
+                <h4>GIS247(Global Inventory System)</h4>
+            </div>
+            <div class="gisheaderdescript">
+                <p>GIS is an exceptional jewelry Inventory management cloud-based that functions in real-time with a
+                    flexible database and essential retail
+                    features to grow business globally. With our software management, you can keep track of your
+                    inventory well and take your business to the next level.</p>
+            </div>
+
+        </div>
+        <div class="row w-100 reveal" id="gismaincontent">
+            <div class="col-4" id="whatisgisImg">
+                <div class="gisbigcircleshape"></div>
+                <img src="assets/whatisgis_img.png" alt="What is GIS Img">
+                <div class="glasscontent_congrats floating">
+                    <div class="congrats_frame_icon">
+                        <i class="bi bi-envelope-fill" id="glasscongrats_icon"></i>
+                    </div>
+                    <div class="congrats_frame_detail">
+                        <h3>Congratulations</h3>
+                        <p>Your admission completed</p>
+                    </div>
+
+                </div>
+                <div class="glasscontent_userExp floating">
+                    <div class="row w-100" id="userExp_mainframe">
+                        <div class="col-3" id="userExp_frame_icon_column">
+                            <div class="userExp_frame_icon">
+                                <div class="userExp_frame_iconactive"></div>
+                            </div>
+                        </div>
+                        <div class="col-9" id="userExp_frame_detail_column">
+                            <div class="userExp_frame_detail">
+                                <h3>User Experience Class</h3>
+                                <p>Today at 12.00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="mainuserbtn_join">
+                        <div class="userExp_btn_join">
+                            Join Now
+                        </div>
+                    </div>
+
+                </div>
+                <div class="glasscontent_productcount floating">
+                    <div class="productcount_frame_icon">
+                        <i class="bi bi-box" id="glassproductcount_icon"></i>
+                    </div>
+                    <div class="productcount_frame_detail">
+                        <h3>1490</h3>
+                        <p>Product Counts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4" id="gisconcept">
+                <div class="row w-100" id="gisconcept_content">
+                    <div class="col-6" id="multistore_concept">
+                        <div class="multistore_img">
+                            <img src="assets/multistore.png" alt="Multi Store Concept">
+                        </div>
+                        <div class="multistore_detail">
+                            <h3>Multi-store concept</h3>
+                            <p>Allows to create Unlimited Locations to manage your stocks globally.</p>
+                        </div>
+                    </div>
+                    <div class="col-6" id="rfid_concept">
+                        <div class="rfid_img">
+                            <img src="assets/rfid.png" alt="RFID Concept">
+                        </div>
+                        <div class="rfid_detail">
+                            <h3>Barcode & RFID readers</h3>
+                            <p>Supports Barcode and RFID Readers to make inventory checking easier.</p>
+                        </div>
+                    </div>
+                    <div class="col-6" id="cloudserver_concept">
+                        <div class="cloudserver_img">
+                            <img src="assets/cloudserver.png" alt="Cloud Server Concept">
+                        </div>
+                        <div class="cloudserver_detail">
+                            <h3>On a Cloud server</h3>
+                            <p>Store data on Cloud Server so users can access it in real time.</p>
+                        </div>
+                    </div>
+                    <div class="col-6" id="ecommerce_concept">
+                        <div class="ecommerce_img">
+                            <img src="assets/ecommerce.png" alt="E-Commerce Concept">
+                        </div>
+                        <div class="ecommerce_detail">
+                            <h3>E-commerce</h3>
+                            <p>E-commerce Integrations to connect your website or online store.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="customerfocusSection reveal">
+        <div class="customer_focus">
+            <div class="row" id="customer_focus_content">
+                <div class="col-6" id="cus_focusdetail">
+                    <h3>Customer Focused</h3>
+                    <p>GIS247 lets jewelry businesses create
+                        experiences that are seamless and integrated for customers.
+                        Because all devices, accounts, and platforms are connected,
+                        customers can communicate via a variety of channels.</p>
+                </div>
+
+                <div class="col-4" id="img-feature">
+                    <img src="assets/GIS_map.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="featureSection reveal" id="features">
+        <div class="featureHeader">
+            <h1>GIS Features</h1>
+            <p>Make your works simplicity and productivity with Highlight Features.</p>
+        </div>
+        <div class="featureContents">
+            <div class="row w-100 reveal" id="rowfeatureContents">
+                <div class="col-4" id="feature1_dashboard_card">
+                    <div class="feature1_dashboard_icon">
+                        <img src="assets/1dashboard.png" alt="Feature 1 Dashboard">
+                    </div>
+                    <div class="feature1_dashboard_detail">
+                        <h3>Dashboard</h3>
+                        <p>View your inventory transactions and customer
+                            profiles in real-time with our Visualize Dashboard tool.</p>
+                    </div>
+                </div>
+                <div class="col-4" id="feature2_reportanalytics_card">
+                    <div class="feature2_reportanalytics_icon">
+                        <img src="assets/2reportandanalytics.png" alt="Feature 2 Report and Analytics">
+                    </div>
+                    <div class="feature2_reportanalytics_detail">
+                        <h3>Report & Analytics</h3>
+                        <p>Make data driven-decision for your business with report.</p>
+                    </div>
+                </div>
+                <div class="col-4" id="feature3_replenishedorder_card">
+                    <div class="feature3_replenishedorder_icon">
+                        <img src="assets/3replenishedOrder.png" alt="Feature Replenished Order">
+                    </div>
+                    <div class="feature3_replenishedorder_detail">
+                        <h3>Replenished Order</h3>
+                        <p>Prevent stock shortages in your store, and you can also enable notifications for stock
+                            shortages.</p>
+                    </div>
+                </div>
+                <div class="col-4" id="feature4_mixnmatch_card">
+                    <div class="feature4_mixnmatch_icon">
+                        <img src="assets/4mix-match.png" alt="Feature 4 Mix and Match">
+                    </div>
+                    <div class="feature4_mixnmatch_detail">
+                        <h3>Mix & Match</h3>
+                        <p>Provide customize jewelry to crafting individual style.</p>
+                    </div>
+                </div>
+                <div class="col-4" id="feature5_ai_card">
+                    <div class="feature5_ai_icon">
+                        <img src="assets/5AI.png" alt="Feature 5 AI">
+                    </div>
+                    <div class="feature5_ai_detail">
+                        <h3>AI</h3>
+                        <p>Turn your ideas into jewelry caption.</p>
+                    </div>
+                </div>
+                <div class="col-4" id="feature6_pos_card">
+                    <div class="feature6_pos_icon">
+                        <img src="assets/6pos.png" alt="Feature 6 POS">
+                    </div>
+                    <div class="feature6_pos_detail">
+                        <h3>POS</h3>
+                        <p>Allow flexible payment options and placing an order for single item.</p>
+                    </div>
+                </div>
+                <div class="col-4" id="feature7_document_card">
+                    <div class="feature7_document_icon">
+                        <img src="assets/7document.png" alt="Feature 7 Document">
+                    </div>
+                    <div class="feature7_document_detail">
+                        <h3>Document</h3>
+                        <p>Eliminate manual tasks with automated actions such as the creation of invoice, billing,
+                            quotation and others.</p>
+                    </div>
+                </div>
+                <div class="col-4" id="feature8_keepdatasafe_card">
+                    <div class="feature8_keepdatasafe_icon">
+                        <img src="assets/8keepdatasave.png" alt="Feature 8 Keep Data Save">
+                    </div>
+                    <div class="feature8_keepdatasafe_detail">
+                        <h3>Keep data save</h3>
+                        <p>We prioritize the safety of your data with advanced security measures, ensuring your data is
+                            protected while streamlining your operation.</p>
+                    </div>
+                </div>
+                <div class="col-4" id="feature9_blockchain_card">
+                    <div class="feature9_blockchain_icon">
+                        <img src="assets/9blockchain.png" alt="Feature 9 Block Chain">
+                    </div>
+                    <div class="feature9_blockchain_detail">
+                        <h3>Block chain</h3>
+                        <p>Elevate security by integrated with Blockchain technology It’s more securely, traceability,
+                            boundless and transparency data storage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="buildBusinessSection">
+        <div class="row w-100 reveal" id="buildBusiness_content">
+            <div class="col-4" id="buildBusinessdetail">
+                <div class="buildbusinessHeader">
+                    <h2>Build your own Jewelry website</h2>
+                </div>
+                <div class="buildbusiness_descript">
+                    <p>We provide full services for your jewelry retail store, allowing you
+                        to establish your own E-Commerce website with our free templates.</p>
+                </div>
+                <div class="checkedBusiness">
+                    <div class="checkedItem">
+                        <img src="assets/checked_icon.svg" class="checkedImg"><span>Easy and quick to create your
+                            website</span>
+                    </div>
+                    <div class="checkedItem">
+                        <img src="assets/checked_icon.svg" class="checkedImg"><span>Plug-in with GIS247 software</span>
+                    </div>
+                </div>
+                <div class="requestdemo">
+                    <button class="btnReqdemo">Request Demo</button>
+                    <p><span>Our experts can help you grow your jewelry business. It's easier and faster.</span>
+                    </p>
+                    <a href="#" class="connectsystemlink">Connect for more details...</a>
+
+                </div>
+            </div>
+
+            <div class="col-4" id="buildbusinessImg">
+                <img src="assets/buildbusiness_img.jpg" alt="Build Business Image">
+            </div>
+        </div>
+    </section>
+    <section class="worldBusinessSection">
+        <div class="row reveal" id="worldBusiness_content">
+            <div class="col-4" id="worldBusiness_left_side">
+                <div class="row" id="client_around_theworld">
+                    <p id="client_title">Our Client around the world</p>
+                    <p id="client_number">1000+</p>
+                </div>
+                <div class="row" id="client_satisfaction">
+                    <p id="client_satistitle">Customer satisfaction score across all support experiences</p>
+                    <p id="client_satisnumber">98%</p>
+                </div>
+            </div>
+            <div class="col-6" id="worldBusiness_right_side">
+                <div class="worldBusinessheader">
+                    <p>Unlock your jewelry business with us</p>
+                    <h2>We have customers 20+ countries around the world.</h2>
+                </div>
+                <div class="worldBusinessMap">
+                    <img src="assets/worldmap2.png" alt="World Map">
+                    <div class="thai">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="usa">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="cambodia">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="vietnam">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="laos">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="myanmar">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="indonesia">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="philippines">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="china">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="taiwan">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="japan">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="hongkong">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="india">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="italy">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="south-africa">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="srilanka">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="australia">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="mauritius">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="vanuatu">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="saudi_arabia">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <!--Emirates-->
+                    <div class="dubai">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+                    <div class="abu_dhabi">
+                        <i class='bx bxs-map' id="mappin"></i>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="deviceforgisSection">
+        <div class="row w-100 reveal" id="devicegis_content">
+            <div class="col-4" id="devicegisImg">
+                <img src="assets/deviceforgis_img.png" alt="Device For GIS">
+            </div>
+            <div class="col-4" id="devicegis_detail">
+                <div class="devicegis_detailContent">
+                    <div class="devicegis_detailHeader">
+                        <p class="devicegis_titlegroup">
+                            <span class="devicegis_greentitle">GIS247 POS</span>
+                            <span class="devicegis_title">on any device, Anywhere</span>
+                        </p>
+                    </div>
+                    <div class="checkeddeviceforgis">
+                        <div class="deviceforgis_checkedItem">
+                            <img src="assets/checked_icon.svg" class="deviceforgis_checkedImg"><span>PC</span>
+                        </div>
+                        <div class="deviceforgis_checkedItem">
+                            <img src="assets/checked_icon.svg" class="deviceforgis_checkedImg"><span>Tablet</span>
+                        </div>
+                        <div class="deviceforgis_checkedItem">
+                            <img src="assets/checked_icon.svg" class="deviceforgis_checkedImg"><span>Mobile</span>
+                        </div>
+                    </div>
+                    <div class="devicegis_downloadContent">
+                        <p class="devicegis_downloadgroup">
+                            <span class="devicegis_downloaddetail">Showcase your app with</span>
+                            <span class="devicegis_downloadgreendetail">GIS POS - Point of Sale</span>
+                        </p>
+                        <a href="https://apps.apple.com/th/app/gis-pos-point-of-sale/id1589900901" target="_blank">
+                            <img src="assets/deviceforgis_download.png" alt="Device for GIS">
+                        </a>
+                        <p class="deviceavailable">* Available on iPhone, iPad</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="contact_us_section" id="enquiry">
+        <div class="row w-100 reveal" id="contactus_content" name="contactus_content">
+            <div class="col-3" id="contact_us_left_side" name="contact_us_left_side">
+                <div class="contact_us_title">
+                    <div class="contact_us_text">
+                        Get in touch for any questions
+                    </div>
+                </div>
+                <div class="contact_us_form">
+                    <form class="contact_us_form_detail">
+                        <div class="input" id="contact_us_form_input">
+                            <input type="text" class="contact_us_form_nameinput" id="contact_us_form_nameinput"
+                                name="contact_us_form_nameinput" autocomplete="off" required>
+                            <div class="inputlabel">Name <span class="required">
+                                    *</span></div>
+                        </div>
+                        <div class="input" id="contact_us_form_input">
+                            <input type="email" id="contact_us_form_emailinput" name="contact_us_form_emailinput"
+                                autocomplete="off" required>
+                            <div class="inputlabel">Email <span class="required">
+                                    *</span></div>
+                        </div>
+                        <div class="input" id="contact_us_form_input">
+                            <input type="tel" id="contact_us_form_phoneinput" name="contact_us_form_phoneinput"
+                                autocomplete="off" required>
+                            <div class="inputlabel">Phone number <span class="required">
+                                    *</span></div>
+                        </div>
+                        <div class="message_text_area">
+                            <div class="message_text_area_title">
+                                Message
+                            </div>
+                            <!-- <input type="text" class="message_text_areainput" placeholder="Placeholder"> -->
+                            <textarea name="message_text_areainput" id="message_text_areainput"
+                                placeholder="Placeholder"></textarea>
+                        </div>
+                        <div class="contactbuttons">
+                            <button class="contactus_btn" id="contactus_btn">
+                                <i class="bi bi-send-fill" id="sendcontact_icon" name="sendcontact_icon"></i>
+                                <p>Send</p>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="row" id="contact_detail">
+                    <div class="col-6" id="contact_detail_address" name="contact_detail_address">
+                        <div class="address_detail">
+                            <i class="bi bi-geo-alt" id="address_icon" name="address_icon"></i>
+                            <div class="subdetailcontactus">
+                                <div class="detail_title">Contact Us</div>
+                                <p>1249/138 E, 15th Floor, Gems Tower Building Charoenkrung Road, Suriyawongse, Bangrak,
+                                    Sathon, Bangkok 10500</p>
+                            </div>
+
+                        </div>
+                        <div class="viewongooglemap">
+                            <a href="https://www.google.com/maps?ll=13.72384,100.516994&z=19&t=m&hl=en&gl=TH&mapclient=embed&cid=2574453681654466789"
+                                target="_blank">
+                                View on Google map
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-2" id="address_detail_content">
+                        <div class="address_detail">
+                            <i class="bi bi-telephone" id="address_icon" name="address_icon"></i>
+                            <div class="subdetailphone">
+                                <div class="detail_title">PHONE</div>
+                                <a href="tel:+6622874925">(+66) 2 287 4925</a>
+                            </div>
+                        </div>
+                        <div class="address_detail">
+                            <i class="bi bi-envelope-paper" id="address_icon" name="address_icon"></i>
+                            <div class="subdetailemail">
+                                <div class="detail_title">EMAIL</div>
+                                <a href="mailto:hello@gis247.net">hello@gis247.net</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="contact_us_right_side" name="contact_us_right_side">
+                <!-- <img src="iframe_.svg" alt="jeweal map"> -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d484.4888706603734!2d100.516994!3d13.72384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e298c54ae5433f%3A0x23ba4bfbc1b608e5!2sJeweal%20Prosoft%20Co.%2C%20Ltd.!5e0!3m2!1sen!2sth!4v1706693395085!5m2!1sen!2sth"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </section>
+    <footer class="gis_footer" id="gis_footer">
+        <div class="col-8" id="gis_footer_left_content">
+            <div class="footer_left_detail_logo_privacy">
+                <img src="assets/gis_logo.png" alt="Footer Logo">
+                <p><span class=privacy_detail>Privacy Polic</span>|<span class="termcondition_detail">Terms &
+                        Conditions</span></p>
+            </div>
+            <div class="footer_copyright">
+                <p>Copyright © 2024 Jeweal Prosoft Co., Ltd. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="col-3" id="gis_footer_right_content">
+            <div class="footer_link_list">
+                <p class="LiMenuItem"><a href="#" class="links">Home</a></p>
+                <p class="LiMenuItem"><a href="#whatIsGis" class="links">About</a></p>
+                <p class="LiMenuItem"><a href="#enquiry" class="links">Get in touch</a></p>
+                <p class="LiMenuItem"><a href="mailto:hello@gis247.net" class="links">FAQs</a></p>
+            </div>
+            <div class="footer_row_followus">
+                <p>Follow Us on</p>
+                <div class="footer_follow_icon">
+                    <!-- <img src="Facebook-icon.svg" class="fb-icon" alt="Facebook Icon"> -->
+                    <a href="https://www.facebook.com/JewealProsoft?mibextid=LQQJ4d" target="_blank"><i
+                            class='bx bxl-facebook' id="fb-icon"></i></a>
+                    <a href="https://www.instagram.com/jewealprosoft/?igsh=emdjZDc4N3Ywd2dz&utm_source=qr"
+                        target="_blank"><i class='bx bxl-instagram' id="ig-icon"></i></a>
+                    <!-- <img src="Instagram-icon.svg" class="ig-icon" alt="Instagram Icon"> -->
+                    <a href="https://www.linkedin.com/in/jeweal-prosoft-b2093521b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"><i class='bx bxl-linkedin' id="li-icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <div class="cookie-container active">
+        <p>
+            <span class="cookie-icon">
+                <img src="cookie-icon.png" alt="cookie icon">
+            </span>
+            <span class="cookie-detail">
+                We use cookies to improve our service. <a href="#">Learn more.</a>
+            </span>
+        </p>
+        <div class="cookie-btnList">
+            <button class="cookie-ok-btn">OK</button>
+            <button class="cookie-donttrack-btn">Don't Track Me</button>
+        </div>
+    </div> -->
+    <!-- <button class="scrolltotop" id="scrolltotop">
+        <i class="bi bi-arrow-up" id="arrow_up_icon"></i>
+    </button> -->
+    <script>
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                } else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+    <script>
+        const navscroll = document.querySelector('.header_default');
+        const nav_whenscroll = document.querySelector('.header_default')
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 56) {
+                navscroll.classList.add('nav-scrolled');
+                nav_whenscroll.classList.remove('active-noscroll');
+                nav_whenscroll.classList.add('active-withscroll');
+            } else if (window.scrollY <= 56) {
+                navscroll.classList.remove('nav-scrolled');
+                nav_whenscroll.classList.remove('active-withscroll');
+                nav_whenscroll.classList.add('active-noscroll')
+            }
+        })
+    </script>
+    <script>
+        const navlinks = document.querySelectorAll('a[class="navbtn_default"]');
+        const logoclick = document.querySelector('a[class="logo"]');
+        navlinks.forEach(navlink => {
+            navlink.addEventListener('click', () => {
+                document.querySelector('.links-active')?.classList.remove('links-active');
+                navlink.classList.add('links-active');
+
+            })
+        })
+        logoclick.addEventListener('click', () => {
+            document.querySelector('.links-active')?.classList.remove('links-active');
+        })
+    </script>
+    <script>
+        // Get all sections that have an ID defined
+        const sections = document.querySelectorAll("section[id]");
+        console.log(sections);
+
+        // Add an event listener listening for scroll
+        window.addEventListener("scroll", navHighlighter);
+
+        function navHighlighter() {
+            // Get current scroll position
+            let scrollY = window.pageYOffset;
+
+            // Now we loop through sections to get height, top and ID values for each
+            sections.forEach((current) => {
+                const sectionHeight = current.offsetHeight;
+                const sectionTop = current.offsetTop - 50;
+                sectionId = current.getAttribute("id");
+
+                /*
+                - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
+                - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
+                */
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    document
+                        .querySelector(".navbar_default a[href*=" + sectionId + "]")
+                        .classList.add("links-active");
+                } else {
+                    document
+                        .querySelector(".navbar_default a[href*=" + sectionId + "]")
+                        .classList.remove("links-active");
+                }
+            });
+        }
+    </script>
+    <script>
+        $('#contactus_btn').click(function (e) {
+            e.preventDefault();
+            const nameinput = $(".contact_us_form_nameinput").val();
+            const email = $("#contact_us_form_emailinput").val();
+            const phoneNumber = $("#contact_us_form_phoneinput").val();
+            const noteMessage = $("#message_text_areainput").val();
+
+            if (nameinput.length == 0) {
+                alert('Please enter your name');
+            } else if (email.length == 0) {
+                alert('Please enter your email');
+            } else if (phoneNumber.length == 0) {
+                alert('Please enter your phone number');
+            } else {
+                $.ajax({
+                    type: "POST",
+                    url: "ajax.php",
+                    data: {
+                        nameinput: nameinput,
+                        email: email,
+                        phoneNumber: phoneNumber,
+                        noteMessage: noteMessage
+                    },
+                    dataType: "json",
+                    success: function (result) {
+                    }
+                });
+                alert("Complete");
+                window.onload(location.reload());
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+
+            $(window).on('scroll', function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#scrolltotop').css("display", "block");
+                } else {
+                    $('#scrolltotop').css("display", "none");
+                }
+            })
+            $('#scrolltotop').bind("click", function () {
+                $('html, body').animate({ scrollTop: 0, behavior: 'smooth' });
+                return false;
+            });
+        });
+    </script>
+    <!-- <script>
+        $(function () {
+            $('.navbar_mobile a[class="navbtn"]').click(function(){
+                // $('.navbar_mobile').hide();
+                if($('#check').is(':checked')) {
+                    // $('.icons #close-icon').css("display","none");
+                    // $('.icons #menu-icon').css("display","block");
+                    $('.navbar').collapse('hide');
+                }else {
+                //     $('.icons #close-icon').css("display","block");
+                //     $('.icons #menu-icon').css("display","none");
+                 }
+            })
+        });
+    </script> -->
+
+    <script>
+
+        $(document).ready(function () {
+            $("#check").click(function () {
+                console.log($('#check',));
+                $(".navbar_mobile").animate({
+                    width: "60%"
+                });
+            });
+            $('.navbar_mobile>a[class="navbtn"]').click(function () {
+                // $("navbar_mobile").hide();
+                $("#check").prop("checked", false);
+            });
+        });
+
+    </script>
+    <script>
+        const cookieContainer = document.querySelector(".cookie-container");
+        const cookieOkBtn = document.querySelector(".cookie-ok-btn");
+        const cookieDonttrackBtn = document.querySelector(".cookie-donttrack-btn");
+
+        cookieOkBtn.addEventListener("click",() => {
+            console.log("You agree to cookies!");
+            cookieContainer.classList.remove("active");
+            window.localStorage.setItem("cookiesAccepted", true);
+        });
+            
+
+        cookieDonttrackBtn.addEventListener("click",() =>{
+            console.log("ignore cookie");
+           cookieContainer.classList.remove("active");
+            window.localStorage.setItem("cookiesIgnored",true);
+        });
+
+        setTimeout(()=>{
+            if(!localStorage.getItem("cookiesAccepted")) {
+                cookieContainer.classList.add("active");
+            }
+        },2000);
+
+    </script>
+</body>
+
+</html>

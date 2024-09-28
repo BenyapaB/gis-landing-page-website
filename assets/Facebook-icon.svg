@@ -1,0 +1,12 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Social Media Icon Square/Facebook">
+<rect id="Social Media Icon" width="31.6081" height="31.6081" rx="15.804" fill="url(#paint0_linear_404_190)"/>
+<path id="Facebook" d="M17.0891 23.7061V16.4972H19.6307L20.0112 13.6877H17.0891V11.894C17.0891 11.0806 17.3263 10.5263 18.5515 10.5263L20.114 10.5256V8.01279C19.8438 7.97861 18.9162 7.9021 17.8371 7.9021C15.5841 7.9021 14.0417 9.21136 14.0417 11.6158V13.6877H11.4937V16.4972H14.0417V23.7061H17.0891V23.7061Z" fill="#EFEFEF"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_404_190" x1="15.804" y1="0" x2="15.804" y2="31.6081" gradientUnits="userSpaceOnUse">
+<stop stop-color="#109DED"/>
+<stop offset="1" stop-color="#1072ED"/>
+</linearGradient>
+</defs>
+</svg>

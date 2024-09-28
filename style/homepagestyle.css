@@ -1,0 +1,4477 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%
+  /* overflow-y: hidden; */
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  /* transition: 1s all ease; */
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 1.5s all ease;
+}
+
+.icons {
+  display: none;
+}
+
+.header_default {
+  position: fixed;
+  width: 1920px;
+  height: 76px;
+  padding: 1.3rem 12% 0px 7%;
+  /* padding-top: 10px; */
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 111;
+}
+
+.header_mobile * {
+  display: none;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.logo img {
+  width: 69px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+/*navbar-scroll*/
+.active-withscroll {
+  background: #ffffff;
+
+  .navbar_default a:hover[class="navbtn"] {
+    color: #1cacac;
+  }
+}
+
+.active-noscroll {
+  .navbar_default a:hover[class="navbtn"] {
+    color: #1cacac;
+  }
+}
+
+.links-active {
+  font-size: 18px;
+  color: #1cacac;
+  opacity: 1;
+  font-weight: 400;
+  width: auto;
+  padding-bottom: 28px;
+  border-bottom: 2px solid #1cacac;
+  transition: 0.1s;
+  text-decoration: none;
+}
+
+/* a[class="navbtn"]:has(.links-active) {
+  color: #1CACAC;
+  opacity: 1;
+  font-weight: 400;
+  width: auto;
+  border-bottom: 2px solid #1CACAC;
+  transition: 0.5s ease;
+} */
+.navbar_default {
+  display: flex;
+  margin-left: 48px;
+  padding-top: 0px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  width: 1920px;
+  /* transition: all 0.5s; */
+  padding-bottom: 0;
+}
+
+.navbar_mobile * {
+  display: none;
+}
+
+.navbar_default a[class="navbtn links-active"] {
+  font-size: 18px;
+  color: #1cacac;
+  opacity: 0.8;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.navbar_default a[class="navbtn_default"] {
+  font-size: 18px;
+  color: #1d1d1f;
+  padding-bottom: 28px;
+  opacity: 0.5;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.navbar_default a:hover[class="navbtn"] {
+  font-weight: 500;
+  /* border-bottom: 2px solid #1CACAC; */
+}
+
+.btnList {
+  display: inline-flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.btnList a {
+  text-decoration: none;
+}
+
+#btnLogin {
+  display: flex;
+  width: 120px;
+  height: 40px;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: #1d1d1f;
+}
+
+#btnLogin:hover {
+  color: #5cc7c0;
+}
+
+#btnRegis {
+  position: relative;
+  display: flex;
+  width: 146px;
+  height: 44px;
+  padding: 9px 25px 10px 0px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  background: #5cc7c0;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0px 7px 8px 0px rgba(33, 33, 33, 0.13);
+}
+
+#btnRegis #arrow-short {
+  display: block;
+  font-size: 1.4rem;
+  position: absolute;
+  right: 30px;
+  top: 5px;
+  width: 20px;
+}
+
+#btnRegis #arrow-long {
+  display: none;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 21px;
+  top: 3px;
+  width: 25px;
+}
+
+#btnRegis:hover {
+  #arrow-short {
+    display: none;
+  }
+
+  #arrow-long {
+    display: block;
+  }
+
+  background: #1cacac;
+  color: white;
+}
+
+/*SECTION1:HEROSECTION*/
+.heroSection {
+  position: relative;
+  width: 1920px;
+  height: 980px;
+  padding: 128px 154px;
+  background-image: url(../assets/herosection_bg.png);
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+#heroSection_content_frame {
+  /* width: 100%; */
+  height: 100%;
+}
+
+#heroSection_content {
+  width: 741px;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.herosection_header {
+  width: 741px;
+  margin-bottom: 32px;
+}
+
+.herosection_detail {
+  color: #6e6e69;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31.2px;
+  margin-bottom: 56px;
+}
+.herosection_detail {
+  margin-bottom: 30px;
+}
+.herosection_detail p {
+  width: 635px;
+  font-size: 18px;
+}
+
+.herosection_header h1 {
+  color: #5cc7c0;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 88px;
+}
+
+.herosection_reqdemo {
+  position: relative;
+  width: 146px;
+  height: 40px;
+}
+
+.herosection_reqdemo a {
+  text-decoration: none;
+}
+
+.herosection_reqdemo a #herosection-btndemo {
+  position: relative;
+  color: #1d1d1f;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 0;
+}
+
+.herosection_reqdemo a #herosection-arrow-short {
+  color: #1d1d1f;
+  display: block;
+  font-size: 1.4rem;
+  position: absolute;
+  right: -11px;
+  top: 4px;
+  width: 20px;
+}
+
+.herosection_reqdemo a #herosection-arrow-long {
+  color: #1d1d1f;
+  display: none;
+  font-size: 1.5rem;
+  position: absolute;
+  right: -19px;
+  top: 2px;
+  width: 25px;
+}
+
+.herosection_reqdemo a #herosection-btndemo:hover {
+  #herosection-arrow-short {
+    display: none;
+  }
+
+  #herosection-arrow-long {
+    display: block;
+    color: #1cacac;
+    transition: 0.3s ease;
+  }
+
+  color: #1cacac;
+  transition: 0.1s ease;
+}
+
+#herosection_image {
+  width: 40%;
+}
+#herosection_image img {
+  width: 1028px;
+  height: 791px;
+}
+
+.heroshape1 {
+  position: absolute;
+  left: -25%;
+  bottom: -6%;
+  width: 973px;
+  height: 177px;
+  background: #ffffff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.heroshape2 {
+  position: absolute;
+  left: 22%;
+  bottom: -12%;
+  width: 1111px;
+  height: 229px;
+  background: #ffffff;
+  border-radius: 50%;
+  z-index: 1;
+  rotate: 3deg;
+}
+
+.heroshape3 {
+  position: absolute;
+  right: -25%;
+  bottom: -6%;
+  width: 973px;
+  height: 177px;
+  background: #ffffff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/*SECTION2:WHATISGIS*/
+.whatisgisSection {
+  position: relative;
+  width: 1920px;
+  height: 1217px;
+  padding: 128px 154px;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.whatisgisHeader_content {
+  display: grid;
+  width: 100%;
+  height: 184px;
+  justify-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.gissmallcircleshape1 {
+  position: absolute;
+  left: 1%;
+  top: 19%;
+  height: 75.44px;
+  width: 75.44px;
+  border: 5px solid #5cc7c0;
+  border-radius: 50%;
+}
+
+.gissmallcircleshape2 {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  height: 41.927px;
+  width: 41.927px;
+  border: 5px solid #5cc7c0;
+  border-radius: 50%;
+}
+
+.gissmallcircleshape3 {
+  position: absolute;
+  right: 1%;
+  top: 17%;
+  height: 53px;
+  width: 53px;
+  border: 5px solid #5cc7c0;
+  border-radius: 50%;
+}
+
+.gisheaderfulltitle {
+  margin-bottom: 24px;
+}
+
+.gisheadertitle h2 {
+  width: 689px;
+  height: auto;
+  color: #101828;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52.8px;
+  letter-spacing: -0.96px;
+}
+
+.gisheaderfulltitle h4 {
+  width: 689px;
+  color: #101828;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52.8px;
+  letter-spacing: -0.96px;
+}
+
+/* .gisheaderdescript {
+  margin-bottom: 80px;
+} */
+
+.gisheaderdescript p {
+  width: 930px;
+  height: auto;
+  color: #6e6e69;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.1px;
+  /* margin-bottom: 80px; */
+}
+
+#gismaincontent {
+  margin-top: 80px;
+  display: flex;
+  gap: 80px;
+}
+
+#whatisgisImg {
+  position: relative;
+  width: 50%;
+}
+
+#whatisgisImg .gisbigcircleshape {
+  width: 697px;
+  height: 697px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #d9d9d9;
+  border-radius: 50%;
+}
+
+#whatisgisImg img {
+  width: 817px;
+  height: 674px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*Glass Content Floating*/
+.floating {
+  animation-name: floating;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 10px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+#whatisgisImg .glasscontent_congrats {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  width: 370px;
+  height: 110px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  top: 43.8%;
+  left: -8%;
+  backdrop-filter: blur(10px);
+}
+
+.congrats_frame_icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background: #f88c3d;
+  margin-left: 26px;
+}
+
+#glasscongrats_icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 1.9em;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.congrats_frame_detail {
+  height: 60%;
+  display: grid;
+}
+
+.congrats_frame_detail h3 {
+  color: #595959;
+  font-size: 18px;
+  font-weight: 700;
+  /* line-height: 43.2px; */
+  letter-spacing: 0.48px;
+}
+
+.congrats_frame_detail p {
+  color: #545567;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.4px;
+}
+
+#whatisgisImg .glasscontent_userExp {
+  position: absolute;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 390px;
+  height: 187px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  bottom: 6%;
+  left: -10px;
+}
+
+#userExp_mainframe {
+  margin-top: 26px;
+}
+
+#userExp_frame_icon_column {
+  width: 20%;
+}
+
+#userExp_frame_detail_column {
+  width: 80%;
+}
+
+.userExp_frame_icon {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 56px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-right: 23px;
+}
+
+.userExp_frame_iconactive {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #2ebb5e;
+  stroke-width: 2px;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  border: 3px solid #fbecd7;
+}
+
+#userExp_frame_detail_column {
+  padding-left: 23px;
+}
+
+.userExp_frame_detail h3 {
+  color: #595959;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.48px;
+}
+
+.userExp_frame_detail p {
+  color: #545567;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.4px;
+}
+
+#mainuserbtn_join {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 28px;
+}
+
+.userExp_btn_join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  border-radius: 80px;
+  background: #d8587e;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#whatisgisImg .glasscontent_productcount {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  right: 4%;
+  bottom: 19%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.productcount_frame_icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background: #23bdee;
+}
+
+#glassproductcount_icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 1.9em;
+  padding: 9.5px 9px;
+  color: #ffffff;
+}
+
+.productcount_frame_detail {
+  height: 75%;
+  display: grid;
+}
+
+.productcount_frame_detail h3 {
+  color: #595959;
+  font-size: 18px;
+  font-weight: 700;
+  /* line-height: 43.2px; */
+  letter-spacing: 0.48px;
+}
+
+.productcount_frame_detail p {
+  color: #545567;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.4px;
+}
+
+#gisconcept {
+  display: flex;
+  width: 45%;
+  justify-content: flex-end;
+}
+
+#gisconcept_content {
+  height: 85%;
+  display: flex;
+  align-items: center;
+}
+
+#multistore_concept,
+#rfid_concept,
+#cloudserver_concept,
+#ecommerce_concept {
+  padding: 24px;
+}
+
+.multistore_img,
+.rfid_img,
+.cloudserver_img,
+.ecommerce_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  padding: 10px;
+  background: #f0faf7;
+  margin-bottom: 24px;
+}
+
+.multistore_img img,
+.rfid_img img,
+.cloudserver_img img,
+.ecommerce_img img {
+  width: 32px;
+  height: 32px;
+}
+
+.multistore_detail,
+.rfid_detail,
+.cloudserver_detail,
+.ecommerce_detail {
+  width: 270px;
+  height: auto;
+}
+
+.multistore_detail h3,
+.rfid_detail h3,
+.cloudserver_detail h3,
+.ecommerce_detail h3 {
+  color: #061c3d;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26.4px;
+}
+
+.multistore_detail p,
+.rfid_detail p,
+.cloudserver_detail p,
+.ecommerce_detail p {
+  color: #6e6e69;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.8px;
+}
+
+/*SECTION3:CUSTOMER_FOCUSED*/
+.customerfocusSection {
+  width: 1920px;
+  height: 512px;
+  padding: 128px 105px;
+  display: flex;
+  /* gap: 100px; */
+  justify-content: center;
+  align-items: center;
+}
+
+.customer_focus {
+  width: 1612px;
+  height: 512px;
+  display: flex;
+  justify-content: center;
+}
+
+#customer_focus_content {
+  background-image: url("../assets/customerfocus_bg.png");
+  background-size: 100% 100%;
+  object-fit: contain;
+  width: 1612px;
+  height: 364px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.264px;
+  line-height: 39.6px;
+}
+
+#cus_focusdetail h3 {
+  color: #101828;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 59.28px;
+  margin-bottom: 24px;
+}
+
+#cus_focusdetail p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  width: 571px;
+  line-height: 29.1px;
+  letter-spacing: -0.15px;
+}
+
+#img-feature {
+  width: 503px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#img-feature img {
+  width: 381.21px;
+  height: 316px;
+}
+
+/*SECTION4:FEATURES*/
+.featureSection {
+  width: 1920px;
+  height: 1199px;
+  display: flex;
+  padding: 128px 154px;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.featureHeader {
+  display: flex;
+  /* padding: 0px 666px 1px 681px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.featureHeader h1 {
+  color: #1d1d1f;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52.8px;
+  letter-spacing: -0.576px;
+}
+
+.featureHeader p {
+  color: #6e6e69;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.1px;
+}
+
+#rowfeatureContents {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+}
+
+#feature1_dashboard_card,
+#feature2_reportanalytics_card,
+#feature3_replenishedorder_card,
+#feature4_mixnmatch_card,
+#feature5_ai_card,
+#feature6_pos_card,
+#feature7_document_card,
+#feature8_keepdatasafe_card,
+#feature9_blockchain_card {
+  display: flex;
+  width: 516px;
+  height: 232px;
+  padding: 40px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 10px 40px 0px rgba(34, 34, 34, 0.05);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.feature1_dashboard_icon img,
+.feature2_reportanalytics_icon img,
+.feature3_replenishedorder_icon img,
+.feature4_mixnmatch_icon img,
+.feature5_ai_icon img,
+.feature6_pos_icon img,
+.feature7_document_icon img,
+.feature8_keepdatasafe_icon img,
+.feature9_blockchain_icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.feature1_dashboard_detail h3,
+.feature2_reportanalytics_detail h3,
+.feature3_replenishedorder_detail h3,
+.feature4_mixnmatch_detail h3,
+.feature5_ai_detail h3,
+.feature6_pos_detail h3,
+.feature7_document_detail h3,
+.feature8_keepdatasafe_detail h3,
+.feature9_blockchain_detail h3 {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.23px;
+  letter-spacing: 0.22px;
+}
+
+.feature1_dashboard_detail p,
+.feature2_reportanalytics_detail p,
+.feature3_replenishedorder_detail p,
+.feature4_mixnmatch_detail p,
+.feature5_ai_detail p,
+.feature6_pos_detail p,
+.feature7_document_detail p,
+.feature8_keepdatasafe_detail p,
+.feature9_blockchain_detail p {
+  color: #6e6e69;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.1px;
+}
+
+/*SECTION5:BUILDBUSINESS*/
+.buildBusinessSection {
+  display: flex;
+  width: 1920px;
+  height: 852px;
+  padding: 128px 0px 128px 154px;
+  align-items: center;
+  gap: 112px;
+  flex-shrink: 0;
+  background: #fafafa;
+}
+
+#buildBusiness_content {
+  gap: 53px;
+  display: flex;
+  align-items: center;
+}
+
+#buildBusinessdetail {
+  width: 649px;
+}
+
+.buildbusinessHeader {
+  width: 400px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.buildbusinessHeader h2 {
+  color: #101828;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52.8px;
+}
+
+.buildbusiness_descript {
+  width: 649px;
+  color: #6e6e69;
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.checkedBusiness {
+  margin-bottom: 48px;
+}
+
+.checkedBusiness .checkedImg {
+  margin-right: 16px;
+}
+
+.checkedBusiness > .checkedItem span {
+  color: #6e6e69;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#buildbusinessImg {
+  width: 60%;
+}
+
+.btnReqdemo {
+  display: flex;
+  width: 198px;
+  height: 44px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  background: #5cc7c0;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0px 7px 8px 0px rgba(33, 33, 33, 0.13);
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.btnReqdemo:hover {
+  background: #1cacac;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.requestdemo {
+  width: 680px;
+}
+
+.requestdemo p {
+  margin-bottom: 0;
+}
+.requestdemo p > span {
+  text-align: center;
+  font-size: 14px;
+  color: #6e6e69;
+  font-weight: 400;
+  line-height: 18.2px;
+}
+
+.requestdemo .connectsystemlink {
+  text-decoration: none;
+  color: #0066cc;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.2px;
+}
+
+#buildbusinessImg img {
+  width: 1067.031px;
+  height: 704px;
+}
+
+/*SECTION6:WORLDBUSINESS*/
+.worldBusinessSection {
+  width: 1920px;
+  height: 1185px;
+  background-image: url("../assets/worldBusiness_bg.jpg");
+  /* background: lightgray; */
+  /* opacity: 0.7; */
+  background-size: 100% 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 128px 105px;
+  color: #1d1d1f;
+}
+
+#worldBusiness_content {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: stretch;
+  gap: 140px;
+}
+
+#worldBusiness_left_side {
+  width: 383px;
+}
+
+#client_around_theworld {
+  width: 383px;
+  padding: 24px;
+}
+
+#client_around_theworld #client_title {
+  color: #6e6e69;
+  font-size: 18px;
+  font-weight: 400;
+  width: 230px;
+  letter-spacing: -1.1%;
+  line-height: 29.7px;
+}
+
+#client_around_theworld #client_number {
+  font-size: 88px;
+  font-weight: 600;
+  line-height: 96.8px;
+  letter-spacing: -1.1px;
+}
+
+#client_satisfaction {
+  width: 244px;
+  padding: 24px;
+}
+
+#client_satisfaction #client_satistitle {
+  color: #6e6e69;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.264px;
+  line-height: 23.4px;
+}
+
+#client_satisfaction #client_satisnumber {
+  font-size: 88px;
+  font-weight: 600;
+  line-height: 96.8px;
+  letter-spacing: -1.1px;
+}
+
+#worldBusiness_right_side {
+  width: 60%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.worldBusinessheader {
+  text-align: center;
+  width: 796px;
+  height: 179px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+
+.worldBusinessheader p {
+  color: #6e6e69;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.1px;
+}
+
+.worldBusinessheader h2 {
+  width: auto;
+  height: 118px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 59.28px;
+}
+
+.worldBusinessMap {
+  position: relative;
+}
+
+.worldBusinessMap svg {
+  width: 1500px;
+  height: 668px;
+}
+
+.pin {
+  background: #1cacac;
+  position: absolute;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+}
+
+#mappin {
+  color: #c1121f;
+  font-size: 1.5em;
+}
+.pin::before {
+  content: "";
+  background: #1cacac;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 1.3s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.pin p {
+  display: none;
+  white-space: nowrap;
+  position: absolute;
+  left: -3em;
+  /* top: 1em; */
+  /* bottom: 100%; */
+
+  top: -150%;
+  transform: translateY(-50%);
+  background: #1cacac;
+  color: #fafafa;
+  border-radius: 4px;
+  padding: 0.3em 0.6em;
+  font-size: 14px;
+  z-index: 11;
+}
+
+.fi {
+  margin-right: 5px;
+}
+
+.pin:hover {
+  p {
+    display: inline-block;
+    background: #fafafa;
+    color: #1cacac;
+    /* transition: all 0.5s ease; */
+  }
+}
+
+.thai {
+  position: absolute;
+  right: 24.5%;
+  bottom: 36%;
+}
+
+.usa {
+  position: absolute;
+  top: 49%;
+  left: 17%;
+}
+
+.cambodia {
+  position: absolute;
+  right: 23%;
+  bottom: 34%;
+}
+
+.vietnam {
+  position: absolute;
+  right: 22%;
+  bottom: 35%;
+}
+
+.laos {
+  position: absolute;
+  right: 24.1%;
+  bottom: 38.2%;
+}
+
+.myanmar {
+  position: absolute;
+  right: 25.8%;
+  top: 60%;
+}
+
+.indonesia {
+  position: absolute;
+  right: 23.5%;
+  bottom: 28.3%;
+}
+
+.philippines {
+  position: absolute;
+  right: 18.5%;
+  bottom: 35%;
+}
+
+.china {
+  position: absolute;
+  right: 24%;
+  bottom: 45%;
+}
+
+.taiwan {
+  position: absolute;
+  right: 19%;
+  bottom: 38.8%;
+}
+
+.japan {
+  position: absolute;
+  right: 13.5%;
+  bottom: 46%;
+}
+
+.hongkong {
+  position: absolute;
+  right: 21%;
+  bottom: 40%;
+}
+
+.india {
+  position: absolute;
+  right: 32%;
+  bottom: 45%;
+}
+
+.italy {
+  position: absolute;
+  right: 49%;
+  bottom: 49%;
+}
+
+.south-africa {
+  position: absolute;
+  right: 46%;
+  bottom: 16%;
+}
+
+.srilanka {
+  position: absolute;
+  right: 30%;
+  bottom: 32%;
+}
+
+.australia {
+  position: absolute;
+  right: 15%;
+  bottom: 19%;
+}
+
+.mauritius {
+  position: absolute;
+  right: 36%;
+  bottom: 21%;
+}
+
+.vanuatu {
+  position: absolute;
+  right: 6%;
+  bottom: 22%;
+}
+
+.saudi_arabia {
+  position: absolute;
+  right: 40.5%;
+  bottom: 40%;
+}
+
+.dubai {
+  position: absolute;
+  right: 36.5%;
+  bottom: 40.6%;
+}
+
+.abu_dhabi {
+  position: absolute;
+  right: 37.8%;
+  bottom: 40%;
+}
+
+/* @keyframes pulse {
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(5);
+  }
+} */
+
+/*SECTION7:DEVICEFORGIS*/
+.deviceforgisSection {
+  /* position: relative; */
+  width: 1920px;
+  height: 745px;
+  background-image: url("../assets/deviceforgis_bg.png");
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+#devicegis_content #devicegisImg {
+  width: 1154px;
+  height: 745px;
+}
+
+#devicegisImg img {
+  width: 1154px;
+  height: 745px;
+}
+
+.devicegis_detailContent {
+  display: grid;
+  align-content: center;
+  justify-items: flex-start;
+  height: 100%;
+  gap: 40px;
+}
+
+.devicegis_titlegroup {
+  width: 544px;
+  height: 106px;
+  font-family: "Segoe UI";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52.8px;
+  margin-bottom: 0px;
+}
+
+.devicegis_titlegroup .devicegis_greentitle {
+  color: #1cacac;
+}
+
+.devicegis_titlegroup .devicegis_title {
+  color: #101828;
+  display: contents;
+  width: 544px;
+}
+
+.deviceforgis_checkedItem img {
+  margin-right: 16px;
+}
+
+.deviceforgis_checkedItem span {
+  color: #646464;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.4px;
+}
+
+.devicegis_downloadContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  /* margin-top: 48px; */
+}
+
+.devicegis_downloadgroup {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 23.4px;
+}
+
+.devicegis_downloadgroup .devicegis_downloadgreendetail {
+  color: #1cacac;
+}
+
+.devicegis_downloadContent img {
+  width: 192px;
+  height: 59px;
+}
+
+.devicegis_downloadContent .deviceavailable {
+  color: #101828;
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+}
+
+/*SECTION8:CONTACT_US*/
+.contact_us_section {
+  display: flex;
+  width: 1920px;
+  height: 1121px;
+  padding: 128px 154px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contactus_content {
+  display: flex;
+  justify-content: space-between;
+  /* text-transform: uppercase; */
+}
+
+#contact_us_left_side {
+  width: 40%;
+}
+
+.contact_us_title {
+}
+
+.contact_us_text {
+  width: 460px;
+  height: 136px;
+  font-size: 54px;
+  color: #101828;
+  font-weight: 700;
+  line-height: 67.5px;
+  margin-bottom: 40px;
+}
+
+#contact_us_form_input {
+  position: relative;
+  height: 44px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+input {
+  position: absolute;
+  width: 528px;
+  height: 56px;
+  outline: none;
+  font-size: 1.2em;
+  padding: 0 17px;
+  line-height: 44px;
+  border-radius: 8px;
+  border: 2px solid #f2f2f2;
+  background: transparent;
+  transition: 0.1s ease;
+  z-index: 1111;
+}
+
+.inputlabel {
+  position: absolute;
+  width: max-content;
+  font-size: 1em;
+  color: #8a8a8a;
+  padding: 0 15px;
+  font-weight: 400;
+  margin: 0 0 0 10px;
+  background-color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.inputlabel .required {
+  font-size: 18px;
+}
+
+input:hover {
+  border: 3px solid #52cbc4;
+}
+
+textarea:focus {
+  color: #606060;
+}
+
+input:focus,
+input:valid {
+  color: #606060;
+  border: 3px solid #52cbc4;
+}
+
+input:focus + .inputlabel,
+input:valid + .inputlabel {
+  color: #52cbc4;
+  height: 30px;
+  line-height: 30px;
+  transform: translate(-5px, -16px) scale(0.9);
+  z-index: 1111;
+}
+
+input:focus + .inputlabel .required,
+input:valid + .inputlabel .required {
+  color: red;
+}
+.requiredinput,
+.requiredinput {
+  border: 1px solid red;
+}
+.message_text_area_title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#message_text_areainput {
+  width: 528px;
+  height: 173px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 2px solid #f2f2f2;
+  margin-bottom: 24px;
+}
+
+.contactbuttons {
+  width: 528px;
+  height: 54px;
+  position: relative;
+}
+
+.contactbuttons #sendcontact_icon {
+  color: #efefef;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 23px;
+  z-index: 1;
+  top: 3px;
+}
+
+.contactus_btn {
+  position: relative;
+  width: 142px;
+  height: 44px;
+  color: #efefef;
+  font-size: 18px;
+  font-weight: 600;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border-radius: 100px;
+  background: #52cbc4;
+  border: 0;
+  box-shadow: 0px 20px 24px 0px rgba(0, 0, 0, 0.03);
+}
+
+.contactbuttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactbuttons p {
+  margin-bottom: 0;
+  margin-left: 16px;
+}
+
+.contactbuttons:hover #sendcontact_icon {
+  transition: all 0.3s ease;
+  color: #ffffff;
+}
+
+.contactbuttons:hover .contactus_btn {
+  background: #1cacac;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+#contact_detail {
+  margin-top: 75px;
+}
+
+#address_detail_content {
+  width: 50%;
+  padding-left: 35px;
+}
+
+.address_detail {
+  display: flex;
+  gap: 15px;
+  width: 299px;
+}
+
+#address_icon {
+  width: 24px;
+  height: 24px;
+}
+
+.subdetailcontactus {
+  font-size: 14px;
+}
+
+.subdetailcontactus > p {
+  width: 290px;
+}
+
+.subdetailphone > a,
+.subdetailemail > a {
+  color: #06c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 165%;
+  letter-spacing: 0.26px;
+  text-decoration: none;
+}
+
+.detail_title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.viewongooglemap {
+  color: #06c;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.28px;
+  padding-left: 30px;
+}
+
+.viewongooglemap a {
+  text-decoration: none;
+}
+
+#contact_us_right_side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact_us_right_side iframe {
+  width: 925px;
+  height: 721px;
+}
+
+/*FOOTER*/
+.gis_footer {
+  position: relative;
+  background: #f2f2f2;
+  width: 1920px;
+  height: 300px;
+  display: inline-flex;
+  padding: 56px 154px;
+  /* flex-direction: ; */
+  /* align-items: flex-start; */
+}
+
+#gis_footer_left_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 1206px;
+  gap: 24px;
+  flex: 1 0 0;
+}
+
+.footer_left_detail_logo_privacy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.footer_left_detail_logo_privacy img {
+  width: 129px;
+  height: 93px;
+}
+
+.footer_left_detail_logo_privacy p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #424245;
+}
+
+.footer_left_detail_logo_privacy p > .privacy_detail {
+  margin-right: 14px;
+}
+
+.footer_left_detail_logo_privacy p > .termcondition_detail {
+  margin-left: 14px;
+}
+
+.footer_copyright p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #1d1d1f;
+}
+
+/* #gis_footer_right_content {
+  display: inline-flex;
+} */
+/* #gis_footer_right_content {
+  display: ;
+} */
+
+#gis_footer_right_content {
+  display: grid;
+  justify-items: flex-start;
+  align-content: end;
+  gap: 24px;
+}
+
+.footer_link_list {
+  width: 406px;
+  height: 27px;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 48px;
+  display: inline-flex;
+}
+
+.footer_link_list p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer_link_list .LiMenuItem>a[class="links"] {
+  text-decoration: none;
+  color: #1d1d1f;
+}
+
+.footer_row_followus {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer_row_followus p {
+  height: fit-content;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 24px;
+  margin-left: 10px;
+}
+
+.footer_follow_icon {
+  display: flex;
+  gap: 16px;
+}
+.footer_follow_icon a {
+  text-decoration: none;
+}
+.footer_follow_icon a > .bx {
+  color: #000000;
+  font-size: 2rem;
+}
+
+.scrolltotop {
+  border: none;
+  position: fixed;
+  display: none;
+  width: 44px;
+  height: 44px;
+  background: #212121;
+  font-size: 1rem;
+  z-index: 99;
+  bottom: 20px;
+  right: 30px;
+  border-radius: 50%;
+  transition: ease-in;
+}
+.scrolltoparea {
+  width: 1920px;
+  position: absolute;
+}
+.scrolltotop:hover {
+  background: #333333;
+}
+
+.scrolltotop #arrow_up_icon {
+  color: #ffffff;
+}
+/*COOKIE BANNER*/
+.cookie-container {
+  position: fixed;
+  bottom: -10%;
+  left: 23%;
+  /* right: 50; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1080px;
+  height: 80px;
+  background: #2a2b2f;
+  color: #ffffff;
+  border-radius: 16px;
+  z-index: 111;
+
+  transition: 400ms;
+}
+
+.cookie-container.active {
+  bottom: 0;
+}
+
+.cookie-container p {
+  margin-bottom: 0;
+}
+.cookie-icon {
+  margin-right: 8px;
+}
+.cookie-detail a {
+  color: #ffffff;
+}
+.cookie-btnList {
+  display: flex;
+  gap: 8px;
+}
+.cookie-ok-btn {
+  cursor: pointer;
+  background: #1cacac;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+}
+
+.cookie-donttrack-btn {
+  cursor: pointer;
+  border-radius: 100px;
+  width: 134px;
+  height: 44px;
+  border: 2px solid #626366;
+  background: #626366;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*TABLET:Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .header_default {
+    width: 1024px;
+  }
+
+  .header_mobile {
+    display: none;
+  }
+
+  .navbar_mobile {
+    display: none;
+  }
+
+  .heroSection {
+    width: 1024px;
+    height: 785px;
+    padding: 128px 64px;
+  }
+
+  #heroSection_content_frame {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  #heroSection_content {
+    width: auto;
+  }
+
+  .herosection_header {
+    width: 400px;
+  }
+
+  .herosection_header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+  }
+
+  .herosection_detail {
+    margin-bottom: 24px;
+  }
+  .herosection_detail p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29.7px;
+    width: 400px;
+  }
+
+  #herosection_image img {
+    width: 721px;
+    height: 537px;
+  }
+
+  /*WHATISGIS*/
+  .whatisgisSection {
+    display: grid;
+    width: 1024px;
+    height: auto;
+    padding: 0 64px;
+    justify-items: center;
+  }
+
+  .whatisgisHeader_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gisheadertitle h2,
+  .gisheaderfulltitle h4 {
+    font-size: 32px;
+  }
+
+  .gisheaderfulltitle h4 {
+    line-height: 13.8px;
+  }
+  .gisheaderdescript p {
+    width: 740px;
+  }
+
+  #gismaincontent {
+    margin-top: 0px;
+    display: flex;
+    gap: 0px;
+    flex-direction: column-reverse;
+  }
+
+  #gisconcept {
+    width: 100%;
+  }
+
+  #gisconcept_content {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 24px;
+  }
+
+  #gisconcept_content .col-6 {
+    width: 25%;
+  }
+
+  #multistore_concept,
+  #rfid_concept,
+  #cloudserver_concept,
+  #ecommerce_concept {
+    padding: 24px;
+  }
+
+  .multistore_img,
+  .rfid_img,
+  .cloudserver_img,
+  .ecommerce_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    padding: 10px;
+    background: #f0faf7;
+    margin-bottom: 24px;
+  }
+
+  .multistore_img img,
+  .rfid_img img,
+  .cloudserver_img img,
+  .ecommerce_img img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .multistore_detail,
+  .rfid_detail,
+  .cloudserver_detail,
+  .ecommerce_detail {
+    width: 100%;
+    height: auto;
+  }
+
+  .multistore_detail h3,
+  .rfid_detail h3,
+  .cloudserver_detail h3,
+  .ecommerce_detail h3 {
+    color: #061c3d;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23.1px;
+  }
+
+  .multistore_detail p,
+  .rfid_detail p,
+  .cloudserver_detail p,
+  .ecommerce_detail p {
+    color: #6e6e69;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26.4px;
+  }
+
+  #whatisgisImg {
+    width: 100%;
+  }
+
+  #whatisgisImg .glasscontent_congrats {
+    left: -5%;
+  }
+
+  #whatisgisImg .glasscontent_productcount {
+    right: 5%;
+  }
+
+  /*CUSTOMERFOCUS*/
+  .customerfocusSection {
+    width: 1024px;
+    padding: 0 64px;
+  }
+
+  .customer_focus {
+    width: 879px;
+    height: 432px;
+  }
+
+  #customer_focus_content {
+    width: 100%;
+    height: 432px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  #customer_focus_content #cus_focusdetail {
+    margin-left: 0;
+    padding: 0;
+    width: 35%;
+  }
+
+  #cus_focusdetail h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39.52px;
+  }
+
+  #cus_focusdetail p {
+    width: 300px;
+    font-size: 14px;
+    font-weight: 400;
+    /* width: 400px; */
+    line-height: 23.4px;
+    letter-spacing: -0.15px;
+  }
+
+  #customer_focus_content #img-feature {
+    width: 45%;
+  }
+
+  #img-feature img {
+    width: 362.42px;
+    height: 300px;
+  }
+
+  /*FEATURES*/
+  .featureSection {
+    width: 1024px;
+    padding: 64px;
+    gap: 40px;
+  }
+
+  .featureHeader {
+    gap: 0;
+  }
+  .featureHeader h1 {
+    font-size: 32px;
+  }
+
+  .featureHeader p {
+    font-size: 18px;
+  }
+  #rowfeatureContents {
+    gap: 24px;
+  }
+
+  #feature1_dashboard_card,
+  #feature2_reportanalytics_card,
+  #feature3_replenishedorder_card,
+  #feature4_mixnmatch_card,
+  #feature5_ai_card,
+  #feature6_pos_card,
+  #feature7_document_card,
+  #feature8_keepdatasafe_card,
+  #feature9_blockchain_card {
+    width: 282px;
+    height: 284px;
+    gap: 16px;
+    padding: 40px;
+    justify-content: flex-start;
+  }
+
+  .feature1_dashboard_icon img,
+  .feature2_reportanalytics_icon img,
+  .feature3_replenishedorder_icon img,
+  .feature4_mixnmatch_icon img,
+  .feature5_ai_icon img,
+  .feature6_pos_icon img,
+  .feature7_document_icon img,
+  .feature8_keepdatasafe_icon img,
+  .feature9_blockchain_icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature1_dashboard_detail h3,
+  .feature2_reportanalytics_detail h3,
+  .feature3_replenishedorder_detail h3,
+  .feature4_mixnmatch_detail h3,
+  .feature5_ai_detail h3,
+  .feature6_pos_detail h3,
+  .feature7_document_detail h3,
+  .feature8_keepdatasafe_detail h3,
+  .feature9_blockchain_detail h3 {
+    color: #1d1d1f;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.23px;
+    letter-spacing: 0.22px;
+  }
+
+  .feature1_dashboard_detail p,
+  .feature2_reportanalytics_detail p,
+  .feature3_replenishedorder_detail p,
+  .feature4_mixnmatch_detail p,
+  .feature5_ai_detail p,
+  .feature6_pos_detail p,
+  .feature7_document_detail p,
+  .feature8_keepdatasafe_detail p,
+  .feature9_blockchain_detail p {
+    color: #6e6e69;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26.4px;
+    width: 223px;
+  }
+
+  /*BUILDBUSINESS*/
+  .buildBusinessSection {
+    width: 1024px;
+    height: 100%;
+    padding: 80px 64px;
+  }
+
+  .buildbusinessHeader {
+    width: 229px;
+  }
+  #buildBusiness_content {
+    flex-wrap: nowrap;
+  }
+
+  #buildBusinessdetail {
+    width: 380px;
+  }
+
+  .buildbusinessHeader h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39.52px;
+  }
+
+  .buildbusiness_descript {
+    width: 354px;
+  }
+
+  .buildbusiness_descript p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .requestdemo {
+    width: auto;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+  }
+
+  .requestdemo p {
+    width: 318px;
+    margin-bottom: 10px;
+  }
+  .requestdemo p > span {
+    line-height: 23.1px;
+  }
+
+  .btnReqdemo {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .requestdemo .connectsystemlink {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0px;
+  }
+  #buildbusinessImg img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*WORLDBUSINESS*/
+  .worldBusinessSection {
+    width: 1024px;
+    height: 100%;
+    padding: 80px 64px;
+  }
+
+  #worldBusiness_content {
+    flex-wrap: nowrap;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  #worldBusiness_left_side {
+    width: 280px;
+  }
+
+  #client_around_theworld {
+    width: auto;
+  }
+
+  #client_around_theworld #client_title {
+    font-size: 18px;
+    line-height: 29.7px;
+    letter-spacing: -1.1%;
+  }
+
+  #client_around_theworld #client_number {
+    font-size: 42px;
+    line-height: 51.87px;
+    font-weight: 600;
+  }
+
+  #client_satisfaction {
+    width: 270px;
+  }
+
+  #client_satisfaction #client_satistitle {
+    font-size: 18px;
+    line-height: 29.7px;
+    /* letter-spacing: -0.264px; */
+  }
+
+  #client_satisfaction #client_satisnumber {
+    font-size: 42px;
+    line-height: 51.87px;
+  }
+
+  #worldBusiness_right_side {
+    width: 602px;
+    justify-items: center;
+  }
+
+  .worldBusinessheader {
+    width: 700px;
+    height: 149px;
+    margin-bottom: 0px;
+    display: grid;
+    justify-items: center;
+  }
+
+  .worldBusinessheader p {
+    font-size: 14px;
+    line-height: 23.1px;
+    font-weight: 400;
+  }
+
+  .worldBusinessheader h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39.52px;
+    width: 403px;
+  }
+
+  .worldBusinessMap {
+    position: relative;
+    width: 602px;
+    height: 318px;
+  }
+
+  .worldBusinessMap img {
+    position: relative;
+    width: 602px;
+    height: 318px;
+  }
+
+  .deviceforgisSection {
+    width: 1024px;
+    height: 100%;
+  }
+
+  #devicegis_content {
+    display: flex;
+    justify-content: center;
+  }
+
+  #devicegis_content #devicegisImg {
+    width: 1154px;
+    height: 745px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #devicegis_detail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .devicegis_detailContent {
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .devicegis_detailHeader {
+    width: 100%;
+    text-align: center;
+  }
+
+  .devicegis_titlegroup {
+    width: 594px;
+  }
+
+  .checkeddeviceforgis {
+    display: flex;
+    gap: 16px;
+  }
+
+  .devicegis_downloadContent {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+  }
+  .devicegis_downloadContent .deviceavailable {
+    font-size: 12px;
+    line-height: 15.6px;
+  }
+  /*CONTACTUS*/
+  .contact_us_section {
+    width: 1024px;
+    padding: 80px 64px;
+    height: 100%;
+  }
+
+  #contactus_content {
+    gap: 32px;
+  }
+
+  #contact_us_left_side {
+    width: 100%;
+  }
+
+  .contact_us_text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact_us_form {
+    width: 100%;
+  }
+
+  .contact_us_form_detail {
+    width: 100%;
+  }
+
+  input,
+  #message_text_areainput {
+    width: 100%;
+  }
+
+  .contactbuttons {
+    width: 100%;
+  }
+
+  #contact_detail {
+    width: 100%;
+    align-items: center;
+    margin-top: 48px;
+  }
+
+  #contact_detail .col-2 {
+    width: 50%;
+    display: flex;
+  }
+
+  .subdetailcontactus > p {
+    width: 452px;
+  }
+
+  #contact_us_right_side {
+    width: 100%;
+  }
+
+  /*FOOTER*/
+  .gis_footer {
+    width: 1024px;
+    height: 100%;
+    padding: 56px 64px;
+  }
+
+  #gis_footer_left_content {
+    width: 20%;
+  }
+
+  #gis_footer_right_content {
+    width: 45%;
+  }
+  .scrolltotop {
+    bottom: 20px;
+    right:30px;
+  }
+}
+
+/*TABLET: LANSCAPE*/
+@media only screen and (max-device-width: 1366px) and (orientation: landscape) {
+  .header_mobile {
+    display: none;
+  }
+
+  .header_default {
+    /* display: block; */
+    width: 1366px;
+  }
+
+  .navbar_mobile {
+    display: none;
+  }
+
+  .heroSection {
+    width: 1366px;
+    height: 100%;
+    padding: 64px 100px;
+  }
+
+  #heroSection_content_frame {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 56px 128px;
+  }
+
+  #heroSection_content {
+    width: 536px;
+  }
+
+  .herosection_header {
+    width: 680px;
+  }
+
+  .herosection_header h1 {
+    width: 550px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+  }
+
+  .herosection_detail p {
+    width: 500px;
+  }
+
+  #herosection_image img {
+    width: 721px;
+    height: 537px;
+  }
+
+  .whatisgisSection {
+    width: 1366px;
+    height: 100%;
+    padding: 64px 100px;
+  }
+
+  .whatisgisHeader_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gisheaderdescript p {
+    /* width: ; */
+  }
+
+  #gismaincontent {
+    gap: 36px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #gisconcept {
+    width: 100%;
+  }
+
+  #gisconcept_content {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 24px;
+    gap: 24px;
+  }
+
+  #gisconcept_content .col-6 {
+    width: 260px;
+  }
+
+  #gisconcept {
+    width: 100%;
+  }
+
+  #whatisgisImg {
+    width: 70%;
+  }
+
+  .customerfocusSection {
+    width: 1366px;
+    height: 100%;
+    padding: 64px 100px;
+  }
+
+  .customer_focus {
+    width: 100%;
+    height: 432px;
+  }
+
+  #customer_focus_content {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  #customer_focus_content #cus_focusdetail {
+    margin-left: 0;
+    padding: 0;
+    width: 25%;
+  }
+
+  #cus_focusdetail h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39.52px;
+  }
+
+  #cus_focusdetail p {
+    width: 335px;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.15px;
+  }
+
+  #customer_focus_content #img-feature {
+    width: 45%;
+  }
+
+  #img-feature img {
+    width: 406px;
+    height: 336px;
+  }
+
+  .featureSection {
+    width: 1366px;
+    height: 100%;
+    padding: 64px 80px;
+  }
+
+  .featureHeader {
+    gap: 0;
+  }
+
+  .featureHeader h1 {
+    font-size: 32px;
+  }
+
+  .featureHeader p {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  #rowfeatureContents {
+    gap: 48px;
+    justify-content: center;
+  }
+
+  #feature1_dashboard_card,
+  #feature2_reportanalytics_card,
+  #feature3_replenishedorder_card,
+  #feature4_mixnmatch_card,
+  #feature5_ai_card,
+  #feature6_pos_card,
+  #feature7_document_card,
+  #feature8_keepdatasafe_card,
+  #feature9_blockchain_card {
+    width: 356.33px;
+    height: 284px;
+    gap: 20px;
+    padding: 40px;
+    justify-content: flex-start;
+  }
+  .feature1_dashboard_detail p,
+  .feature2_reportanalytics_detail p,
+  .feature3_replenishedorder_detail p,
+  .feature4_mixnmatch_detail p,
+  .feature5_ai_detail p,
+  .feature6_pos_detail p,
+  .feature7_document_detail p,
+  .feature8_keepdatasafe_detail p,
+  .feature9_blockchain_detail p {
+    font-size: 16px;
+    line-height: 23.1px;
+  }
+
+  .buildBusinessSection {
+    width: 1366px;
+    height: 100%;
+    padding: 64px 80px;
+  }
+
+  .buildbusinessHeader {
+    width: 229px;
+  }
+  .buildbusinessHeader h2 {
+    font-size: 32px;
+    line-height: 39.52px;
+  }
+
+  .buildbusiness_descript {
+    width: 354px;
+  }
+  .buildbusiness_descript p {
+    width: auto;
+    font-size: 14px;
+    line-height: 23.1px;
+    font-weight: 400;
+  }
+  #buildBusiness_content {
+    flex-wrap: nowrap;
+    gap: 80px;
+  }
+  #buildbusinessImg img {
+    max-width: 100%;
+    height: auto;
+}
+  #buildBusinessdetail {
+    width: 452px;
+  }
+
+  .requestdemo {
+    width: auto;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+  }
+
+  .requestdemo p {
+    width: 318px;
+  }
+
+  .requestdemo p > span {
+    font-size: 14px;
+    line-height: 23.1px;
+  }
+
+  .requestdemo .connectsystemlink {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0px;
+  }
+
+  .worldBusinessSection {
+    align-items: center;
+    width: 1366px;
+    height: 100%;
+    padding: 64px 80px;
+    justify-content: center;
+  }
+
+  #worldBusiness_content {
+    flex-wrap: nowrap;
+    gap: 0px;
+    justify-content: center;
+  }
+
+  #worldBusiness_left_side {
+    width: 30%;
+  }
+
+  #client_around_theworld {
+    width: 270px;
+  }
+
+  #client_around_theworld #client_title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.011em;
+  }
+
+  #client_around_theworld #client_number {
+    font-size: 42px;
+    line-height: 51.87px;
+    font-weight: 600;
+  }
+
+  #client_satisfaction #client_satistitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.011em;
+  }
+
+  #client_satisfaction #client_satisnumber {
+    font-size: 42px;
+    line-height: 51.87px;
+    font-weight: 600;
+  }
+
+  #worldBusiness_right_side {
+    justify-items: center;
+    width: 50%;
+  }
+
+  .worldBusinessheader {
+    width: 403px;
+    height: 123px;
+  }
+
+  .worldBusinessheader p {
+    font-size: 14px;
+    line-height: 23.1px;
+  }
+
+  .worldBusinessheader h2 {
+    font-size: 32px;
+    line-height: 39.52px;
+  }
+
+  .worldBusinessMap {
+    position: relative;
+    width: 602px;
+    height: 318px;
+  }
+
+  .worldBusinessMap img {
+    position: relative;
+    width: 602px;
+    height: 318px;
+  }
+
+  .deviceforgisSection {
+    justify-content: center;
+    width: 1366px;
+    height: 100%;
+  }
+
+  #devicegis_content #devicegisImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #devicegis_detail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .devicegis_detailContent {
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .devicegis_detailHeader {
+    width: 100%;
+    text-align: center;
+  }
+
+  .devicegis_titlegroup {
+    width: 594px;
+  }
+
+  .checkeddeviceforgis {
+    display: flex;
+    gap: 16px;
+  }
+
+  .devicegis_downloadContent {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+  }
+
+  .devicegis_downloadContent .deviceavailable {
+    font-size: 12px;
+    line-height: 15.6px;
+  }
+
+  .contact_us_section {
+    width: 1366px;
+    padding: 80px 64px;
+    height: 100%;
+  }
+
+  #contactus_content {
+    gap: 32px;
+    display: grid;
+    justify-content: center;
+  }
+
+  #contact_us_left_side {
+    width: 100%;
+  }
+
+  .contact_us_text {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contact_us_form {
+    width: 100%;
+  }
+
+  .contact_us_form_detail {
+    width: 100%;
+  }
+
+  input,
+  #message_text_areainput {
+    width: 100%;
+  }
+
+  .contactbuttons {
+    width: 100%;
+  }
+
+  #contact_detail {
+    width: 100%;
+    align-items: center;
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #contact_detail .col-2 {
+    width: 50%;
+    display: flex;
+  }
+
+  .detail_title {
+    font-size: 14px;
+  }
+
+  .address_detail {
+    width: 100%;
+  }
+
+  .subdetailcontactus > p {
+    width: 452px;
+    font-size: 14px;
+  }
+
+  .subdetailphone > a,
+  .subdetailemail > a {
+    font-size: 14px;
+  }
+
+  #contact_us_right_side {
+    width: 100%;
+  }
+
+  /*FOOTER*/
+  .gis_footer {
+    width: 1366px;
+    height: 100%;
+    padding: 80px 165px;
+  }
+
+  #gis_footer_left_content {
+    width: 20%;
+  }
+
+  #gis_footer_right_content {
+    width: 45%;
+  }
+
+  .footer_left_detail_logo_privacy p > .privacy_detail,
+  .termcondition_detail,
+  .footer_copyright p,
+  .footer_link_list p,
+  .footer_row_followus p {
+    font-size: 16px;
+  }
+
+  .scrolltotop {
+    right:100px;
+  }
+}
+
+/*MOBILE DEVICE:PORTRIAT*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
+  .header_default {
+    display: none;
+  }
+
+  .header_mobile * {
+    display: block;
+  }
+
+  .header_mobile {
+    width: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 23px;
+    z-index: 1;
+  }
+
+  input[type="checkbox"] {
+    width: auto;
+  }
+
+  .logo_mobile img {
+    width: 69px;
+    height: 50px;
+    /* margin-bottom: 20px; */
+  }
+
+  .icons {
+    display: inline-flex;
+    font-size: 2rem;
+  }
+
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+
+  .navbar_mobile {
+    position: absolute;
+    top: 100%;
+    width: 60%;
+    height: 90vh;
+    background: rgb(255, 255, 255);
+    padding: unset;
+    overflow: hidden;
+    transition: all 0.3s;
+    justify-content: center;
+    display: grid;
+    left: -110%;
+    margin-left: 0px;
+    gap: 0px;
+    align-content: center;
+    z-index: -1;
+  }
+
+  .navbar_mobile a[class="navbtn"] {
+    font-size: 18px;
+    color: #1d1d1f;
+    padding: 10%;
+    opacity: 1;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .navbar_mobile a:hover[class="navbtn"] {
+    color: #1cacac;
+  }
+
+  .navbar_mobile .btnList {
+    display: grid;
+    text-align: left;
+  }
+
+  .btnList a[class="btnlink"] {
+    padding: 0;
+  }
+
+  #check:checked ~ .navbar_mobile {
+    height: 90vh;
+    margin-top: -16%;
+    justify-content: start;
+    z-index: -1;
+    left: 0;
+    /* align-content: baseline;*/
+    justify-items: flex-start;
+  }
+
+  .navbar_mobile a {
+    display: block;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #2b486c;
+    text-align: center;
+    /* transform: translateY(-50px); */
+    transition: 0.3s ease;
+  }
+
+  .navbar_mobile a:hover {
+    color: #1cacac;
+  }
+
+  #btnLogin {
+    display: flex;
+    width: 80px;
+    height: 40px;
+    /* padding: 8px; */
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    background: transparent;
+    color: #1d1d1f;
+  }
+  #btnRegis {
+    background: none;
+    color: #1d1d1f;
+    box-shadow: none;
+    justify-content: left;
+    padding-left: 10%;
+  }
+
+  .heroSection {
+    background-image: url("../assets/herosection_bg_mobile.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100%;
+    /* padding: 0px 30px; */
+    padding: 0px 30px 64px 30px;
+  }
+
+  #heroSection_content_frame {
+    /* width: auto; */
+    height: 100%;
+    display: grid;
+    margin-top: 5vh;
+  }
+
+  #heroSection_content {
+    width: 343px;
+  }
+
+  .herosection_header {
+    /* display: inline; */
+    width: auto;
+    margin-bottom: 32px;
+  }
+
+  .herosection_header h1 {
+    font-size: 48px;
+    line-height: 59.28px;
+    width: 313px;
+    font-size: 48px;
+    /* line-height: 52.8px; */
+  }
+  .herosection_detail {
+    margin-bottom: 15px;
+  }
+
+  .herosection_detail p {
+    width: auto;
+    font-size: 18px;
+    line-height: 29.7px;
+  }
+
+  .herosection_reqdemo {
+    margin-bottom: 32px;
+  }
+  #herosection_image img {
+    width: 501.19px;
+    height: 313px;
+    margin-left: 0px;
+  }
+
+  .whatisgisSection {
+    width: auto;
+    height: 100%;
+    padding: 64px 31px;
+  }
+
+  .whatisgisHeader_content {
+    justify-content: center;
+  }
+
+  .gisheadertitle h2 {
+    font-size: 32px;
+    line-height: 39.2px;
+    font-weight: 700;
+    letter-spacing: -0.64px;
+  }
+
+  .gisheaderfulltitle h4 {
+    width: 313px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 35.2px;
+    letter-spacing: -0.64px;
+  }
+
+  .gisheaderdescript p {
+    width: 345px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.1px;
+  }
+
+  .gissmallcircleshape1,
+  .gissmallcircleshape2,
+  .gissmallcircleshape3 {
+    display: none;
+  }
+
+  #gismaincontent {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+
+  #whatisgisImg {
+    width: 100%;
+  }
+
+  #whatisgisImg .gisbigcircleshape {
+    width: 273.5px;
+    height: 273.5px;
+  }
+
+  #whatisgisImg img {
+    width: 320.588px;
+    height: 264.475px;
+  }
+
+  #whatisgisImg .glasscontent_congrats {
+    width: 185.187px;
+    height: 51.164px;
+    border-radius: 8px;
+    justify-content: space-around;
+    top: 35%;
+    left: -10%;
+  }
+
+  .congrats_frame_icon {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: #f88c3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  #glasscongrats_icon {
+    font-size: 1.2em;
+    padding: 0;
+  }
+
+  .congrats_frame_detail h3 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .congrats_frame_detail {
+    height: auto;
+    margin-left: 0;
+  }
+
+  .congrats_frame_detail p {
+    font-size: 10px;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  #whatisgisImg .glasscontent_userExp {
+    width: 210px;
+    height: 80px;
+    border-radius: 8px;
+    justify-content: space-around;
+    left: -35px;
+    bottom: -8px;
+  }
+
+  #userExp_mainframe {
+    margin-top: 0;
+    padding: 8px;
+  }
+
+  .userExp_frame_icon {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 56px;
+    background: rgba(0, 0, 0, 0.2);
+    margin-right: 4px;
+  }
+
+  .userExp_frame_iconactive {
+    width: 15px;
+    height: 15px;
+    stroke-width: 2px;
+  }
+
+  #userExp_frame_detail_column {
+    padding-left: 16px;
+  }
+
+  .userExp_frame_detail h3 {
+    font-size: 14px;
+    width: 160px;
+    font-weight: 600;
+  }
+
+  .userExp_frame_detail p {
+    font-size: 10px;
+    line-height: 0;
+    margin-bottom: 0;
+  }
+
+  #mainuserbtn_join {
+    padding-bottom: 0;
+    margin-bottom: 25px;
+  }
+
+  .userExp_btn_join {
+    width: 90px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  #whatisgisImg .glasscontent_productcount {
+    width: 148px;
+    height: 53px;
+    border-radius: 8px;
+    justify-content: space-around;
+    right: -2%;
+    bottom: 28%;
+  }
+
+  .productcount_frame_icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  #glassproductcount_icon {
+    font-size: 1.2em;
+    padding: 4px;
+  }
+
+  .productcount_frame_detail {
+    height: 45%;
+  }
+
+  .productcount_frame_detail h3 {
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 0;
+    font-weight: 600;
+  }
+
+  .productcount_frame_detail p {
+    font-size: 12px;
+  }
+
+  #gisconcept {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #gisconcept_content {
+    /* width: 100%; */
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  #multistore_concept,
+  #rfid_concept,
+  #cloudserver_concept,
+  #ecommerce_concept {
+    width: 100%;
+    display: grid;
+  }
+
+  .multistore_detail,
+  .rfid_detail,
+  .cloudserver_detail,
+  .ecommerce_detail {
+    width: 270px;
+    height: auto;
+  }
+
+  .customerfocusSection {
+    width: auto;
+    height: 100%;
+    padding: 40px 16px;
+    display: flex;
+  }
+
+  .customer_focus {
+    width: 343px;
+    height: 463px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #customer_focus_content {
+    width: 343px;
+    height: 463px;
+    gap: 20px;
+  }
+
+  #cus_focusdetail {
+    margin-left: 0;
+    width: 100%;
+    height: 40%;
+  }
+
+  #cus_focusdetail h3 {
+    /* text-align: center; */
+    font-size: 32px;
+    margin-bottom: 0px;
+  }
+
+  #cus_focusdetail p {
+    font-size: 16px;
+    width: auto;
+    line-height: 27.8px;
+  }
+
+  #img-feature {
+    height: auto;
+  }
+
+  #img-feature img {
+    width: 255px;
+    height: 205px;
+  }
+
+  .featureSection {
+    width: auto;
+    padding: 40px 16px;
+    height: 100%;
+    gap: 60px;
+  }
+
+  .featureHeader {
+    width: 100%;
+    text-align: center;
+    gap: 0;
+  }
+
+  .featureHeader h1 {
+    font-size: 32px;
+  }
+
+  .featureHeader p {
+    font-size: 14px;
+    width: 300px;
+    line-height: 23.1px;
+    margin-bottom: 0;
+  }
+
+  .featureContents {
+    display: flex;
+    justify-content: center;
+  }
+
+  #feature1_dashboard_card,
+  #feature2_reportanalytics_card,
+  #feature3_replenishedorder_card,
+  #feature4_mixnmatch_card,
+  #feature5_ai_card,
+  #feature6_pos_card,
+  #feature7_document_card,
+  #feature8_keepdatasafe_card,
+  #feature9_blockchain_card {
+    width: 100%;
+    height: 224px;
+  }
+
+  .buildBusinessSection {
+    width: auto;
+    height: 100%;
+    padding: 40px 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* #buildBusiness_content {
+    flex-flow: column-reverse;
+  } */
+
+  .buildbusinessHeader {
+    width: auto;
+    height: 100%;
+    text-align: left;
+  }
+
+  .buildbusinessHeader h2 {
+    width: auto;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39.52px;
+  }
+
+  .buildbusiness_descript {
+    width: auto;
+    margin-bottom: 0px;
+  }
+
+  .buildbusiness_descript p {
+    font-size: 14px;
+    line-height: 23.1px;
+  }
+
+  .checkedBusiness > .checkedItem span {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  #buildbusinessImg {
+    width: 100%;
+    padding: 0;
+  }
+
+  #buildbusinessImg img {
+    width: 100%;
+    height: 222px;
+  }
+
+  .requestdemo {
+    width: auto;
+    display: grid;
+    justify-items: center;
+  }
+
+  .requestdemo p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .requestdemo .connectsystemlink {
+    font-size: 14px;
+  }
+
+  .worldBusinessSection {
+    width: auto;
+    height: 100%;
+    padding: 40px 16px;
+    display: flex;
+    justify-content: center;
+    background-size: 100% 100%;
+    background-image: url("../assets/worldBusiness_bg_mobile.jpg");
+  }
+
+  #worldBusiness_content {
+    flex-flow: column-reverse;
+    gap: 0;
+    justify-content: flex-end;
+  }
+
+  #worldBusiness_right_side {
+    width: 100%;
+  }
+
+  .worldBusinessheader {
+    width: 292px;
+    height: auto;
+  }
+
+  .worldBusinessheader p {
+    width: auto;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .worldBusinessheader h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 35.2px;
+  }
+
+  .worldBusinessMap img {
+    width: 343px;
+    height: 181px;
+  }
+
+  #worldBusiness_left_side {
+    width: auto;
+    display: flex;
+  }
+
+  #client_around_theworld {
+    width: auto;
+    height: 201px;
+  }
+
+  #client_around_theworld #client_title {
+    width: 92px;
+    font-size: 14px;
+    line-height: 18.2px;
+    height: 74px;
+  }
+
+  #client_around_theworld #client_number {
+    font-size: 32px;
+    line-height: 0;
+  }
+
+  #client_satisfaction #client_satistitle {
+    font-size: 14px;
+    line-height: 18.2px;
+  }
+
+  #client_satisfaction #client_satisnumber {
+    font-size: 32px;
+    line-height: 0;
+  }
+
+  .deviceforgisSection {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px;
+    background-size: contain;
+  }
+
+  #devicegis_content {
+    height: auto;
+  }
+
+  #devicegis_content #devicegisImg {
+    width: 100%;
+    height: 290px;
+  }
+
+  #devicegisImg img {
+    width: 100%;
+    height: 238px;
+  }
+
+  #devicegis_detail {
+    width: 100%;
+    padding: 0;
+  }
+
+  .devicegis_detailHeader {
+    text-align: center;
+  }
+
+  .devicegis_titlegroup {
+    line-height: 39.52px;
+    width: auto;
+    font-size: 32px;
+    margin-bottom: 0px;
+  }
+
+  .checkeddeviceforgis {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .deviceforgis_checkedItem span {
+    font-size: 14px;
+  }
+
+  .devicegis_downloadContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    gap: 10px;
+  }
+
+  .devicegis_downloadContent img {
+    width: 96px;
+    height: 29.31px;
+  }
+
+  .devicegis_downloadContent .deviceavailable {
+    font-size: 12px;
+  }
+
+  .devicegis_downloadgroup {
+    font-size: 14px;
+  }
+
+  .contact_us_section {
+    width: auto;
+    height: 100%;
+    padding: 40px 16px 24px 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #contactus_content {
+    flex-flow: column;
+  }
+
+  #contact_us_left_side {
+    width: 100%;
+  }
+
+  .contact_us_title {
+    height: 100px;
+    width: 343px;
+  }
+
+  #contact_us_right_side {
+    width: 100%;
+  }
+
+  .contact_us_text {
+    font-size: 32px;
+    height: 100px;
+    width: 260px;
+    line-height: 35.2px;
+    margin-bottom: 0;
+  }
+
+  input,
+  #message_text_areainput {
+    width: 100%;
+  }
+
+  .contactbuttons {
+    width: 100%;
+  }
+
+  #contact_detail {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 24px;
+  }
+
+  #contact_detail .col-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+  }
+
+  #contact_detail_address {
+    width: 100%;
+    padding: 0;
+  }
+
+  .detail_title {
+    font-size: 14px;
+  }
+  .address_detail {
+    width: 159px;
+  }
+
+  .subdetailcontactus > p {
+    width: 295px;
+  }
+
+  .subdetailphone {
+    width: max-content;
+  }
+  .subdetailphone > a, .subdetailemail > a {
+    font-size: 14px;
+}
+
+  .footer_left_detail_logo_privacy p > .privacy_detail,
+  .termcondition_detail,
+  .footer_copyright p,
+  .footer_link_list p,
+  .footer_row_followus p {
+    font-size: 14px;
+  }
+
+
+  #contact_us_right_side iframe {
+    width: 343px;
+    height: 263px;
+  }
+
+  .gis_footer {
+    width: 100%;
+    height: 100%;
+    padding: 56px 16px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #gis_footer_left_content {
+    width: auto;
+    align-items: center;
+  }
+
+  .footer_left_detail_logo_privacy {
+    align-items: center;
+  }
+
+  #gis_footer_right_content {
+    justify-items: center;
+    margin-bottom: 24px;
+    width: auto;
+  }
+
+  .footer_link_list p {
+    font-size: 14px;
+  }
+
+  .footer_link_list {
+    gap: 16px;
+    justify-content: center;
+    width: auto;
+  }
+
+  .footer_follow_icon img {
+    width: 31px;
+    height: 31px;
+  }
+
+  .footer_follow_icon .li-icon {
+    margin-right: 0;
+  }
+
+  .footer_copyright {
+    text-align: center;
+  }
+
+  .scrolltotop {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-device-width: 667px) and (orientation: landscape) {
+  .header_default {
+    display: none;
+  }
+
+  .header_mobile * {
+    display: block;
+  }
+
+  .header_mobile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 23px;
+    z-index: 1;
+  }
+
+  input[type="checkbox"] {
+    width: auto;
+  }
+
+  .logo_mobile img {
+    width: 69px;
+    height: 50px;
+    /* margin-bottom: 20px; */
+  }
+
+  .icons {
+    display: inline-flex;
+    font-size: 2rem;
+  }
+
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+
+  .navbar_mobile {
+    position: absolute;
+    top: 100%;
+    width: 60%;
+    height: 90vh;
+    background: rgb(255, 255, 255);
+    padding: unset;
+    overflow: hidden;
+    transition: all 0.3s;
+    justify-content: center;
+    display: grid;
+    left: -110%;
+    margin-left: 0px;
+    gap: 0px;
+    align-content: center;
+    z-index: -1;
+  }
+
+  .navbar_mobile a[class="navbtn"] {
+    font-size: 18px;
+    color: #1d1d1f;
+    padding: 10%;
+    opacity: 1;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .navbar_mobile a:hover[class="navbtn"] {
+    color: #1cacac;
+  }
+
+  .navbar_mobile .btnList {
+    display: grid;
+    text-align: left;
+  }
+
+  .btnList a[class="btnlink"] {
+    padding: 0;
+  }
+
+  #check:checked ~ .navbar_mobile {
+    height: 90vh;
+    margin-top: -0%;
+    justify-content: start;
+    z-index: -1;
+    left: 0;
+    /* align-content: baseline;*/
+    justify-items: flex-start;
+  }
+
+  .navbar_mobile a {
+    display: block;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #2b486c;
+    text-align: center;
+    /* transform: translateY(-50px); */
+    transition: 0.3s ease;
+  }
+
+  .navbar_mobile a:hover {
+    color: #1cacac;
+  }
+
+  #btnLogin {
+    display: flex;
+    width: 80px;
+    height: 40px;
+    /* padding: 8px; */
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    background: transparent;
+    color: #1d1d1f;
+  }
+  #btnRegis {
+    background: none;
+    color: #1d1d1f;
+    box-shadow: none;
+    justify-content: left;
+    padding-left: 10%;
+  }
+
+  .heroSection {
+    width: auto;
+    height: 100%;
+  }
+  #heroSection_content_frame {
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    /* margin-top: 5vh; */
+  }
+
+  #heroSection_content {
+    margin-bottom: 55px;
+  }
+  .herosection_header {
+    width: auto;
+    margin-bottom: 32px;
+  }
+
+  .herosection_header h1 {
+    font-size: 48px;
+    line-height: 52.8px;
+  }
+
+  .herosection_detail {
+    margin-bottom: 20px;
+  }
+  .herosection_detail p {
+    width: 560px;
+    font-size: 20px;
+  }
+
+  #herosection_image {
+    width: auto;
+  }
+  #herosection_image img {
+    /* width: 374px;
+    height: 292.005px;
+    margin-left: -30px; */
+    display: none;
+  }
+
+  .whatisgisSection {
+    width: auto;
+    height: 100%;
+    padding: 64px 31px;
+  }
+  .whatisgisHeader_content {
+    justify-content: center;
+  }
+
+  .gisheadertitle h2 {
+    font-size: 32px;
+    line-height: 35.2px;
+    letter-spacing: -0.64px;
+  }
+
+  .gisheaderfulltitle h4 {
+    width: 400px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35.2px;
+    letter-spacing: -0.64px;
+  }
+
+  .gisheaderdescript p {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+  }
+
+  .gissmallcircleshape1,
+  .gissmallcircleshape2,
+  .gissmallcircleshape3 {
+    display: none;
+  }
+
+  #gisconcept {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #gisconcept_content {
+    /* width: 100%; */
+    flex-flow: wrap;
+    align-items: flex-start;
+  }
+
+  #multistore_concept,
+  #rfid_concept,
+  #cloudserver_concept,
+  #ecommerce_concept {
+    width: 100%;
+    display: grid;
+  }
+
+  .multistore_detail,
+  .rfid_detail,
+  .cloudserver_detail,
+  .ecommerce_detail {
+    width: 270px;
+    height: auto;
+  }
+
+  #whatisgisImg .gisbigcircleshape {
+    width: 273.5px;
+    height: 273.5px;
+  }
+
+  #whatisgisImg img {
+    width: 320.588px;
+    height: 264.475px;
+    margin-left: 43px;
+  }
+
+  #whatisgisImg .glasscontent_congrats {
+    width: 185.187px;
+    height: 51.164px;
+    border-radius: 8px;
+    justify-content: space-around;
+    top: 35%;
+    left: -5%;
+  }
+
+  .congrats_frame_icon {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: #f88c3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  #glasscongrats_icon {
+    font-size: 1.2em;
+    padding: 0;
+  }
+
+  .congrats_frame_detail h3 {
+    font-size: 14px;
+  }
+
+  .congrats_frame_detail {
+    height: auto;
+    margin-left: 0;
+  }
+
+  .congrats_frame_detail p {
+    font-size: 10px;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  #whatisgisImg .glasscontent_userExp {
+    width: 210px;
+    height: 80px;
+    border-radius: 8px;
+    justify-content: space-around;
+    left: -35px;
+    bottom: -8px;
+  }
+
+  #userExp_mainframe {
+    margin-top: 0;
+    padding: 8px;
+  }
+
+  .userExp_frame_icon {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 56px;
+    background: rgba(0, 0, 0, 0.2);
+    margin-right: 4px;
+  }
+
+  .userExp_frame_iconactive {
+    width: 15px;
+    height: 15px;
+    stroke-width: 2px;
+  }
+
+  #userExp_frame_detail_column {
+    padding-left: 16px;
+  }
+
+  .userExp_frame_detail h3 {
+    font-size: 14px;
+    width: 160px;
+  }
+
+  .userExp_frame_detail p {
+    font-size: 10px;
+    line-height: 0;
+    margin-bottom: 0;
+  }
+
+  #mainuserbtn_join {
+    padding-bottom: 0;
+    margin-bottom: 25px;
+  }
+
+  .userExp_btn_join {
+    width: 90px;
+    height: 25px;
+    font-size: 14px;
+  }
+
+  #whatisgisImg .glasscontent_productcount {
+    width: 148px;
+    height: 53px;
+    border-radius: 8px;
+    justify-content: space-around;
+    right: 10%;
+    bottom: 28%;
+  }
+
+  .productcount_frame_icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  #glassproductcount_icon {
+    font-size: 1.2em;
+    padding: 4px;
+  }
+
+  .productcount_frame_detail {
+    height: 45%;
+  }
+
+  .productcount_frame_detail h3 {
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 0;
+  }
+
+  .productcount_frame_detail p {
+    font-size: 12px;
+  }
+
+  .customerfocusSection {
+    width: auto;
+    height: 100%;
+    padding: 40px 16px;
+    display: flex;
+  }
+
+  .customer_focus {
+    width: 500px;
+    height: 367px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #customer_focus_content {
+    width: auto;
+    height: 300px;
+  }
+
+  #cus_focusdetail {
+    margin-left: 0;
+    padding: 0;
+    width: 45%;
+    height: auto;
+  }
+
+  #cus_focusdetail h3 {
+    /* text-align: center; */
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  #cus_focusdetail p {
+    font-size: 12px;
+    width: auto;
+    line-height: 20.8px;
+    margin-bottom: 0;
+  }
+
+  #img-feature {
+    height: auto;
+  }
+
+  #img-feature img {
+    width: 224px;
+    height: 177px;
+  }
+
+  .featureSection {
+    width: auto;
+  }
+
+  .featureHeader h1 {
+    font-size: 32px;
+  }
+
+  .featureHeader p {
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  #feature1_dashboard_card,
+  #feature2_reportanalytics_card,
+  #feature3_replenishedorder_card,
+  #feature4_mixnmatch_card,
+  #feature5_ai_card,
+  #feature6_pos_card,
+  #feature7_document_card,
+  #feature8_keepdatasafe_card,
+  #feature9_blockchain_card {
+    width: 100%;
+  }
+
+  .buildBusinessSection {
+    width: auto;
+    height: 100%;
+    padding: 40px 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #buildBusiness_content {
+    flex-flow: column-reverse;
+  }
+
+  .buildbusinessHeader {
+    width: auto;
+    height: 100%;
+    text-align: center;
+  }
+
+  .buildbusinessHeader h2 {
+    width: auto;
+    font-size: 32px;
+    line-height: 35.2px;
+    margin-bottom: 40px;
+  }
+
+  .buildbusiness_descript {
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .buildbusiness_descript p {
+    width: auto;
+    font-size: 18px;
+    line-height: 23.4px;
+    text-align: left;
+  }
+
+  .checkedBusiness > .checkedItem span {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  #buildbusinessImg {
+    width: 100%;
+    padding: 0;
+  }
+
+  #buildbusinessImg img {
+    width: 100%;
+    height: auto;
+  }
+
+  .requestdemo {
+    width: auto;
+    display: grid;
+    justify-items: center;
+  }
+
+  .requestdemo p {
+    text-align: center;
+  }
+
+  .worldBusinessSection {
+    width: auto;
+    justify-content: center;
+  }
+
+  #worldBusiness_content {
+    flex-flow: column-reverse;
+    gap: 0;
+    justify-content: flex-end;
+  }
+
+  .worldBusinessheader {
+    width: auto;
+  }
+  .worldBusinessheader p {
+    width: auto;
+    font-size: 18px;
+  }
+
+  .worldBusinessheader h2 {
+    width: auto;
+    font-size: 42px;
+  }
+
+  #worldBusiness_left_side {
+    width: auto;
+    display: flex;
+  }
+  #client_around_theworld #client_title {
+    height: 157px;
+    font-size: 20px;
+  }
+  #client_around_theworld #client_number {
+    font-size: 65px;
+  }
+  #client_satisfaction #client_satistitle {
+    font-size: 20px;
+  }
+  #client_satisfaction #client_satisnumber {
+    font-size: 65px;
+  }
+
+  .deviceforgisSection {
+    width: auto;
+  }
+
+  #devicegis_content #devicegisImg {
+    height: 360px;
+  }
+
+  #devicegisImg img {
+    width: 522px;
+    height: 343px;
+  }
+
+  .devicegis_titlegroup {
+    font-size: 40px;
+  }
+
+  .contact_us_section {
+    width: auto;
+    padding: 40px 16px;
+    justify-content: center;
+  }
+
+  #contactus_content {
+    display: flex;
+  }
+
+  .contact_us_text {
+    font-size: 32px;
+    width: auto;
+    line-height: 35.2px;
+    height: 80px;
+  }
+
+  #contact_detail {
+    argin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* gap: 24px;*/
+  }
+
+  #contact_detail .col-2 {
+    width: 52%;
+    display: flex;
+    /* justify-content: space-around; */
+  }
+
+  #contact_detail_address {
+    width: 48%;
+  }
+
+  .address_detail {
+    width: 159px;
+  }
+
+  .subdetailcontactus > p {
+    width: 235px;
+  }
+
+  #contact_us_right_side iframe {
+    width: 343px;
+    height: 263px;
+  }
+  .gis_footer {
+    width: 100%;
+    height: 100%;
+    padding: 56px 16px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #gis_footer_left_content {
+    width: auto;
+    align-items: center;
+  }
+
+  .footer_left_detail_logo_privacy {
+    align-items: center;
+  }
+
+  #gis_footer_right_content {
+    justify-items: center;
+    margin-bottom: 24px;
+    width: auto;
+  }
+
+  .footer_link_list p {
+    font-size: 14px;
+  }
+
+  .footer_link_list {
+    gap: 16px;
+    justify-content: center;
+    width: auto;
+  }
+
+  .footer_follow_icon img {
+    width: 31px;
+    height: 31px;
+  }
+
+  .footer_follow_icon .li-icon {
+    margin-right: 0;
+  }
+
+  .footer_copyright {
+    text-align: center;
+  }
+
+  .scrolltotop {
+    display: none !important;
+  }
+}
